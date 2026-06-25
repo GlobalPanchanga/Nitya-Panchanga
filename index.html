@@ -102,7 +102,7 @@
                 Select a date, then open your timezone and city to view the
                 local Panchanga and special observance timings.
             </p>
-            <a class="latest" href="2026-06-27.html">Open first available date</a>
+            <a id="today-link" class="latest" href="2026-06-27.html">Open today's Panchanga</a>
         </section>
 
         <section class="date-list">
@@ -169,6 +169,30 @@
             
         </section>
     </main>
+
+    <script>
+        (function () {
+            const availableDates = ["2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27"];
+            const dateSet = new Set(availableDates);
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, "0");
+            const dd = String(today.getDate()).padStart(2, "0");
+            const todayKey = `${yyyy}-${mm}-${dd}`;
+            const todayLink = document.getElementById("today-link");
+
+            if (!todayLink) {
+                return;
+            }
+
+            todayLink.href = `${todayKey}.html`;
+
+            if (!dateSet.has(todayKey)) {
+                todayLink.title =
+                    "The page for today's date has not been generated yet.";
+            }
+        })();
+    </script>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "729f54527b434683a9be9468e7cf4a8a"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
