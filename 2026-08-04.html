@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Worldwide daily Hindu Panchanga by date and city" name="description"/>
+<title>Daily Panchanga - Tuesday, August 04, 2026</title>
+<style>
+        :root {
+            color-scheme: light;
+            --bg: #fffaf0;
+            --card: #ffffff;
+            --primary: #8c3b12;
+            --secondary: #d97706;
+            --text: #2b2118;
+            --muted: #6b5b4b;
+            --border: #ead8c5;
+            --soft: #fff1dc;
+            --shadow: 0 8px 24px rgba(85, 45, 16, 0.08);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        .page {
+            width: min(980px, calc(100% - 24px));
+            margin: 0 auto;
+            padding: 24px 0 48px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #fff7e8, #ffe8bf);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 18px;
+        }
+
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 18px;
+        }
+
+        .language-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 0 0 auto;
+        }
+
+        .language-control label {
+            color: var(--muted);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .language-control select {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.86);
+            color: var(--text);
+            padding: 8px 10px;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            color: var(--primary);
+            font-size: clamp(1.65rem, 4vw, 2.4rem);
+        }
+
+        .date-navigation {
+            display: grid;
+            gap: 10px;
+            margin: 0 0 18px;
+        }
+
+        .date-entry {
+            display: grid;
+            gap: 10px;
+        }
+
+        .date-item {
+            min-height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            padding: 14px 18px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            background: var(--card);
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+        }
+
+        .date-item:hover { background: #fff7eb; }
+
+        .date-item.active-date {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+
+        .date-item-icon {
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(140, 59, 18, 0.10);
+            font-size: 1.2rem;
+            flex: 0 0 auto;
+        }
+
+        .active-date .date-item-icon { background: rgba(255,255,255,0.18); }
+
+        .date-content {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            margin-bottom: 18px;
+        }
+
+        .common-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .common-item {
+            background: var(--soft);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px;
+        }
+
+        .common-label {
+            color: var(--muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .common-value { font-weight: 700; margin-top: 3px; }
+
+        .alphabet-instruction {
+            margin: 0 0 12px;
+            color: var(--muted);
+            font-weight: 700;
+        }
+
+        .alphabet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(58px, 1fr));
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .alphabet-button {
+            min-width: 58px;
+            min-height: 52px;
+            padding: 10px 14px;
+            border: 2px solid var(--border);
+            border-radius: 11px;
+            background: #fff;
+            color: var(--primary);
+            font: inherit;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+            touch-action: manipulation;
+        }
+
+        .alphabet-button:hover { background: var(--soft); }
+        .alphabet-button:focus-visible {
+            outline: 3px solid rgba(217, 119, 6, 0.42);
+            outline-offset: 2px;
+        }
+        .alphabet-button[aria-pressed="true"] {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+
+        .letter-panel { margin-top: 8px; }
+        .letter-heading {
+            margin: 0 0 12px;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        details {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+        }
+
+        summary { cursor: pointer; font-weight: 700; list-style: none; }
+        summary::-webkit-details-marker { display: none; }
+
+        .city-card { margin-bottom: 10px; box-shadow: none; overflow: hidden; }
+        .city-card > summary { padding: 15px 16px; }
+        .city-card > summary::after { content: "+"; float: right; }
+        .city-card[open] > summary::after { content: "−"; }
+        .city-content { padding: 0 16px 16px; }
+
+        .field-row {
+            display: grid;
+            grid-template-columns: minmax(125px, 0.34fr) 1fr;
+            gap: 12px;
+            padding: 8px 0;
+            border-top: 1px solid #f2e8dd;
+        }
+
+        .field-label { color: var(--muted); font-weight: 700; }
+        .special { background: #fffaf2; }
+        .source-link a { color: var(--primary); font-weight: 700; text-decoration: none; }
+        .source-link a:hover { text-decoration: underline; }
+        .warning { color: #9b1c1c; font-weight: 700; }
+        .footer { color: var(--muted); text-align: center; margin-top: 24px; font-size: 0.9rem; }
+
+        @media (max-width: 680px) {
+            .common-grid { grid-template-columns: 1fr; }
+            .field-row { grid-template-columns: 1fr; gap: 3px; }
+            .page { width: min(100% - 16px, 980px); padding-top: 12px; }
+            .hero { padding: 18px; }
+            .hero-top { flex-direction: column; }
+            .language-control { width: 100%; justify-content: flex-end; }
+            .date-content { padding: 14px; }
+            .alphabet-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 12px;
+            }
+            .alphabet-button { min-width: 0; min-height: 54px; }
+        }
+
+        @media (max-width: 380px) {
+            .alphabet-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+<main class="page">
+<section class="hero">
+<div class="hero-top">
+<div>
+<h1 data-i18n-fixed="daily_panchanga">Daily Panchanga</h1>
+<div data-date-value="2026-08-04" id="page-date">
+                        Tuesday, August 04, 2026
+                    </div>
+</div>
+<div class="language-control">
+<label data-i18n-fixed="language" for="language-select">Language</label>
+<select aria-label="Language" id="language-select">
+<option value="en">English</option>
+<option value="kn">ಕನ್ನಡ</option>
+</select>
+</div>
+</div>
+</section>
+<nav aria-label="Panchanga dates" class="date-navigation" id="date-navigation">
+<div class="date-entry">
+<a class="date-item" href="2026-07-31.html">
+<span class="date-item-label" data-date-value="2026-07-31">
+                    Friday, July 31, 2026
+                </span>
+<span aria-hidden="true" class="date-item-icon">
+                    +
+                </span>
+</a>
+</div><div class="date-entry">
+<a class="date-item" href="2026-08-01.html">
+<span class="date-item-label" data-date-value="2026-08-01">
+                    Saturday, August 01, 2026
+                </span>
+<span aria-hidden="true" class="date-item-icon">
+                    +
+                </span>
+</a>
+</div><div class="date-entry">
+<a class="date-item" href="2026-08-02.html">
+<span class="date-item-label" data-date-value="2026-08-02">
+                    Sunday, August 02, 2026
+                </span>
+<span aria-hidden="true" class="date-item-icon">
+                    +
+                </span>
+</a>
+</div><div class="date-entry">
+<a class="date-item" href="2026-08-03.html">
+<span class="date-item-label" data-date-value="2026-08-03">
+                    Monday, August 03, 2026
+                </span>
+<span aria-hidden="true" class="date-item-icon">
+                    +
+                </span>
+</a>
+</div><div class="date-entry">
+<a aria-current="page" class="date-item active-date" href="2026-08-04.html">
+<span class="date-item-label" data-date-value="2026-08-04">
+                    Tuesday, August 04, 2026
+                </span>
+<span aria-hidden="true" class="date-item-icon">
+                    −
+                </span>
+</a>
+<section aria-label="Panchanga for selected date" class="date-content">
+<div class="common-grid">
+<div class="common-item">
+<div class="common-label" data-i18n-fixed="samvatsara">Samvatsara</div>
+<div class="common-value" data-i18n-value="" data-original="Parabhava">Parabhava</div>
+</div>
+<div class="common-item">
+<div class="common-label" data-i18n-fixed="ayana">Ayana</div>
+<div class="common-value" data-i18n-value="" data-original="Dakshinayana">Dakshinayana</div>
+</div>
+</div>
+<p class="alphabet-instruction" data-i18n-fixed="select_city_letter">
+                Select the first letter of your city
+            </p>
+<div aria-label="City initials" class="alphabet-grid" role="group">
+<button aria-controls="letter-a" aria-pressed="false" class="alphabet-button" data-letter-target="letter-a" type="button">A</button><button aria-controls="letter-b" aria-pressed="false" class="alphabet-button" data-letter-target="letter-b" type="button">B</button><button aria-controls="letter-p" aria-pressed="false" class="alphabet-button" data-letter-target="letter-p" type="button">P</button><button aria-controls="letter-z" aria-pressed="false" class="alphabet-button" data-letter-target="letter-z" type="button">Z</button>
+</div>
+<section class="letter-panel" data-letter-panel="" hidden="" id="letter-a">
+<h2 class="letter-heading">
+<span data-i18n-fixed="cities_beginning">Cities beginning with</span>
+                    A
+                </h2>
+<div class="city-list">
+<details class="city-card">
+<summary data-i18n-value="" data-original="Auckland, Auckland, New Zealand">Auckland, Auckland, New Zealand</summary>
+<div class="city-content">
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Ritu">Ritu</div>
+<div class="field-value" data-i18n-value="" data-original="Hemant (Prewinter)">Hemant (Prewinter)</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Amanta Maasa">Amanta Maasa</div>
+<div class="field-value" data-i18n-value="" data-original="Ashadha">Ashadha</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Paksha">Paksha</div>
+<div class="field-value" data-i18n-value="" data-original="Krishna Paksha">Krishna Paksha</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Tithi">Tithi</div>
+<div class="field-value" data-i18n-value="" data-original="Shashthi upto 04:33 AM, Aug 05">Shashthi upto 04:33 AM, Aug 05</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Vaara">Vaara</div>
+<div class="field-value" data-i18n-value="" data-original="Mangalawara">Mangalawara</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Nakshatra">Nakshatra</div>
+<div class="field-value" data-i18n-value="" data-original="guide book; Revati upto 04:24 AM, Aug 05">guide book; Revati upto 04:24 AM, Aug 05</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Yoga">Yoga</div>
+<div class="field-value" data-i18n-value="" data-original="Dhriti upto 02:03 AM, Aug 05">Dhriti upto 02:03 AM, Aug 05</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Karana">Karana</div>
+<div class="field-value" data-i18n-value="" data-original="Garaja upto 05:02 PM; Vanija upto 04:33 AM, Aug 05">Garaja upto 05:02 PM; Vanija upto 04:33 AM, Aug 05</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Sooryodaya">Sooryodaya</div>
+<div class="field-value" data-i18n-value="" data-original="07:17 AM">07:17 AM</div>
+</div>
+<p class="source-link planetary-source-link"><a data-planetary-city-source="Auckland" href="https://www.drikpanchang.com/planet/position/planetary-positions-sidereal.html?geoname-id=2193733&amp;date=04%2F08%2F2026" rel="noopener noreferrer" target="_blank">View Planetary Position and Kundali for Auckland on Drik Panchang</a></p><p class="source-link"><a data-city-source="Auckland" href="https://www.drikpanchang.com/panchang/month-panchang.html?geoname-id=2193733&amp;date=04/08/2026" rel="noopener noreferrer" target="_blank">View Auckland Panchanga on Drik Panchang</a></p>
+</div>
+</details>
+</div>
+</section>
+<section class="letter-panel" data-letter-panel="" hidden="" id="letter-b">
+<h2 class="letter-heading">
+<span data-i18n-fixed="cities_beginning">Cities beginning with</span>
+                    B
+                </h2>
+<div class="city-list">
+<details class="city-card">
+<summary data-i18n-value="" data-original="Bengaluru, Karnataka, India">Bengaluru, Karnataka, India</summary>
+<div class="city-content">
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Ritu">Ritu</div>
+<div class="field-value" data-i18n-value="" data-original="Grishma (Summer)">Grishma (Summer)</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Amanta Maasa">Amanta Maasa</div>
+<div class="field-value" data-i18n-value="" data-original="Ashadha">Ashadha</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Paksha">Paksha</div>
+<div class="field-value" data-i18n-value="" data-original="Krishna Paksha">Krishna Paksha</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Tithi">Tithi</div>
+<div class="field-value" data-i18n-value="" data-original="Shashthi upto 10:03 PM">Shashthi upto 10:03 PM</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Vaara">Vaara</div>
+<div class="field-value" data-i18n-value="" data-original="Mangalawara">Mangalawara</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Nakshatra">Nakshatra</div>
+<div class="field-value" data-i18n-value="" data-original="guide book; Revati upto 09:54 PM; compatibility report">guide book; Revati upto 09:54 PM; compatibility report</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Yoga">Yoga</div>
+<div class="field-value" data-i18n-value="" data-original="Dhriti upto 07:33 PM">Dhriti upto 07:33 PM</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Karana">Karana</div>
+<div class="field-value" data-i18n-value="" data-original="Garaja upto 10:32 AM; Vanija upto 10:03 PM">Garaja upto 10:32 AM; Vanija upto 10:03 PM</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Sooryodaya">Sooryodaya</div>
+<div class="field-value" data-i18n-value="" data-original="06:06 AM">06:06 AM</div>
+</div>
+<p class="source-link planetary-source-link"><a data-planetary-city-source="Bengaluru" href="https://www.drikpanchang.com/planet/position/planetary-positions-sidereal.html?geoname-id=1277333&amp;date=04%2F08%2F2026" rel="noopener noreferrer" target="_blank">View Planetary Position and Kundali for Bengaluru on Drik Panchang</a></p><p class="source-link"><a data-city-source="Bengaluru" href="https://www.drikpanchang.com/panchang/month-panchang.html?geoname-id=1277333&amp;date=04/08/2026" rel="noopener noreferrer" target="_blank">View Bengaluru Panchanga on Drik Panchang</a></p>
+</div>
+</details>
+</div>
+</section>
+<section class="letter-panel" data-letter-panel="" hidden="" id="letter-p">
+<h2 class="letter-heading">
+<span data-i18n-fixed="cities_beginning">Cities beginning with</span>
+                    P
+                </h2>
+<div class="city-list">
+<details class="city-card">
+<summary data-i18n-value="" data-original="Pittsford, New York, United States">Pittsford, New York, United States</summary>
+<div class="city-content">
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Ritu">Ritu</div>
+<div class="field-value" data-i18n-value="" data-original="Grishma (Summer)">Grishma (Summer)</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Amanta Maasa">Amanta Maasa</div>
+<div class="field-value" data-i18n-value="" data-original="Ashadha">Ashadha</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Paksha">Paksha</div>
+<div class="field-value" data-i18n-value="" data-original="Krishna Paksha">Krishna Paksha</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Tithi">Tithi</div>
+<div class="field-value" data-i18n-value="" data-original="Shashthi upto 12:33 PM">Shashthi upto 12:33 PM</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Vaara">Vaara</div>
+<div class="field-value" data-i18n-value="" data-original="Mangalawara">Mangalawara</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Nakshatra">Nakshatra</div>
+<div class="field-value" data-i18n-value="" data-original="Revati upto 12:24 PM; compatibility report">Revati upto 12:24 PM; compatibility report</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Yoga">Yoga</div>
+<div class="field-value" data-i18n-value="" data-original="Dhriti upto 10:03 AM">Dhriti upto 10:03 AM</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Karana">Karana</div>
+<div class="field-value" data-i18n-value="" data-original="Vanija upto 12:33 PM; Vishti upto 11:56 PM">Vanija upto 12:33 PM; Vishti upto 11:56 PM</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Sooryodaya">Sooryodaya</div>
+<div class="field-value" data-i18n-value="" data-original="06:04 AM">06:04 AM</div>
+</div>
+<p class="source-link planetary-source-link"><a data-planetary-city-source="Pittsford" href="https://www.drikpanchang.com/planet/position/planetary-positions-sidereal.html?geoname-id=5131614&amp;date=04%2F08%2F2026" rel="noopener noreferrer" target="_blank">View Planetary Position and Kundali for Pittsford on Drik Panchang</a></p><p class="source-link"><a data-city-source="Pittsford" href="https://www.drikpanchang.com/panchang/month-panchang.html?geoname-id=5131614&amp;date=04/08/2026" rel="noopener noreferrer" target="_blank">View Pittsford Panchanga on Drik Panchang</a></p>
+</div>
+</details>
+</div>
+</section>
+<section class="letter-panel" data-letter-panel="" hidden="" id="letter-z">
+<h2 class="letter-heading">
+<span data-i18n-fixed="cities_beginning">Cities beginning with</span>
+                    Z
+                </h2>
+<div class="city-list">
+<details class="city-card">
+<summary data-i18n-value="" data-original="Zurich, Zurich, Switzerland">Zurich, Zurich, Switzerland</summary>
+<div class="city-content">
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Ritu">Ritu</div>
+<div class="field-value" data-i18n-value="" data-original="Grishma (Summer)">Grishma (Summer)</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Amanta Maasa">Amanta Maasa</div>
+<div class="field-value" data-i18n-value="" data-original="Ashadha">Ashadha</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Paksha">Paksha</div>
+<div class="field-value" data-i18n-value="" data-original="Krishna Paksha">Krishna Paksha</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Tithi">Tithi</div>
+<div class="field-value" data-i18n-value="" data-original="Shashthi upto 06:33 PM">Shashthi upto 06:33 PM</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Vaara">Vaara</div>
+<div class="field-value" data-i18n-value="" data-original="Mangalawara">Mangalawara</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Nakshatra">Nakshatra</div>
+<div class="field-value" data-i18n-value="" data-original="Revati upto 06:24 PM; compatibility report; guide book">Revati upto 06:24 PM; compatibility report; guide book</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Yoga">Yoga</div>
+<div class="field-value" data-i18n-value="" data-original="Dhriti upto 04:03 PM">Dhriti upto 04:03 PM</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Karana">Karana</div>
+<div class="field-value" data-i18n-value="" data-original="Garaja upto 07:02 AM; Vanija upto 06:33 PM; Vishti upto 05:56 AM, Aug 05">Garaja upto 07:02 AM; Vanija upto 06:33 PM; Vishti upto 05:56 AM, Aug 05</div>
+</div>
+<div class="field-row">
+<div class="field-label" data-i18n-label="" data-original="Sooryodaya">Sooryodaya</div>
+<div class="field-value" data-i18n-value="" data-original="06:08 AM">06:08 AM</div>
+</div>
+<p class="source-link planetary-source-link"><a data-planetary-city-source="Zurich" href="https://www.drikpanchang.com/planet/position/planetary-positions-sidereal.html?geoname-id=2657896&amp;date=04%2F08%2F2026" rel="noopener noreferrer" target="_blank">View Planetary Position and Kundali for Zurich on Drik Panchang</a></p><p class="source-link"><a data-city-source="Zurich" href="https://www.drikpanchang.com/panchang/month-panchang.html?geoname-id=2657896&amp;date=04/08/2026" rel="noopener noreferrer" target="_blank">View Zurich Panchanga on Drik Panchang</a></p>
+</div>
+</details>
+</div>
+</section>
+</section>
+</div>
+</nav>
+<p class="footer" data-i18n-fixed="footer_note">
+            All dates and timings are local to the listed location.
+            Source details are linked city-wise to Drik Panchang.
+        </p>
+</main>
+<script>
+        (function () {
+            const buttons = Array.from(document.querySelectorAll("[data-letter-target]"));
+            const panels = Array.from(document.querySelectorAll("[data-letter-panel]"));
+
+            function closeCityCards() {
+                document.querySelectorAll(".city-card[open]").forEach(card => {
+                    card.open = false;
+                });
+            }
+
+            function selectLetter(button) {
+                const targetId = button.dataset.letterTarget;
+                const alreadySelected = button.getAttribute("aria-pressed") === "true";
+
+                buttons.forEach(item => item.setAttribute("aria-pressed", "false"));
+                panels.forEach(panel => panel.hidden = true);
+                closeCityCards();
+
+                if (alreadySelected) return;
+
+                button.setAttribute("aria-pressed", "true");
+                const target = document.getElementById(targetId);
+                if (target) target.hidden = false;
+            }
+
+            buttons.forEach(button => {
+                button.addEventListener("click", () => selectLetter(button));
+            });
+
+            document.querySelectorAll(".city-card").forEach(card => {
+                card.addEventListener("toggle", () => {
+                    if (!card.open) return;
+                    document.querySelectorAll(".city-card[open]").forEach(other => {
+                        if (other !== card) other.open = false;
+                    });
+                });
+            });
+        })();
+    </script>
+<script id="panchanga-language-switcher">
+        (function () {
+            const fixedTranslations = {
+                en: {
+                    daily_panchanga: "Daily Panchanga",
+                    language: "Language",
+                    samvatsara: "Samvatsara",
+                    ayana: "Ayana",
+                    ritu: "Ritu",
+                    time_zone: "Time zone",
+                    select_city_letter: "Select the first letter of your city",
+                    cities_beginning: "Cities beginning with",
+                    special_event: "Special event",
+                    special_details: "Special timing/details",
+                note: "Note",
+                    footer_note:
+                        "All dates and timings are local to the listed location. " +
+                        "Source details are linked city-wise to Drik Panchang."
+                },
+                kn: {
+                    daily_panchanga: "ದೈನಂದಿನ ಪಂಚಾಂಗ",
+                    language: "ಭಾಷೆ",
+                    samvatsara: "ಸಂವತ್ಸರ",
+                    ayana: "ಅಯನ",
+                    ritu: "ಋತು",
+                    time_zone: "ಸಮಯ ವಲಯ",
+                    select_city_letter: "ನಿಮ್ಮ ನಗರದ ಮೊದಲ ಇಂಗ್ಲಿಷ್ ಅಕ್ಷರವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+                    cities_beginning: "ಈ ಅಕ್ಷರದಿಂದ ಆರಂಭವಾಗುವ ನಗರಗಳು",
+                    special_event: "ವಿಶೇಷ ಆಚರಣೆ",
+                    special_details: "ವಿಶೇಷ ಸಮಯ / ವಿವರಗಳು",
+                note: "ಸೂಚನೆ",
+                    footer_note:
+                        "ಎಲ್ಲ ದಿನಾಂಕಗಳು ಮತ್ತು ಸಮಯಗಳು ಸೂಚಿಸಿದ ಸ್ಥಳದ ಸ್ಥಳೀಯ ಸಮಯದಲ್ಲಿವೆ. " +
+                        "ಪ್ರತಿ ನಗರದ ಮೂಲ ವಿವರಗಳು ದೃಕ್ ಪಂಚಾಂಗಕ್ಕೆ ಸಂಪರ್ಕಿಸಲ್ಪಟ್ಟಿವೆ."
+                }
+            };
+
+            const terms = {
+                "Amanta Maasa": "ಅಮಾಂತ ಮಾಸ",
+                "Paksha": "ಪಕ್ಷ",
+                "Tithi": "ತಿಥಿ",
+                "Vaara": "ವಾರ",
+                "Nakshatra": "ನಕ್ಷತ್ರ",
+                "Yoga": "ಯೋಗ",
+                "Karana": "ಕರಣ",
+                "Sooryodaya": "ಸೂರ್ಯೋದಯ",
+                "Parabhava": "ಪರಾಭವ",
+                "Uttarayana": "ಉತ್ತರಾಯಣ",
+                "Dakshinayana": "ದಕ್ಷಿಣಾಯನ",
+                "Grishma (Summer)": "ಗ್ರೀಷ್ಮ ಋತು",
+                "Shukla Paksha": "ಶುಕ್ಲ ಪಕ್ಷ",
+                "Krishna Paksha": "ಕೃಷ್ಣ ಪಕ್ಷ",
+                "Pratipada": "ಪ್ರತಿಪದಾ",
+                "Dwitiya": "ದ್ವಿತೀಯಾ",
+                "Tritiya": "ತೃತೀಯಾ",
+                "Chaturthi": "ಚತುರ್ಥೀ",
+                "Panchami": "ಪಂಚಮಿ",
+                "Shashthi": "ಷಷ್ಠೀ",
+                "Saptami": "ಸಪ್ತಮಿ",
+                "Ashtami": "ಅಷ್ಟಮಿ",
+                "Navami": "ನವಮಿ",
+                "Dashami": "ದಶಮಿ",
+                "Ekadashi": "ಏಕಾದಶಿ",
+                "Dwadashi": "ದ್ವಾದಶಿ",
+                "Trayodashi": "ತ್ರಯೋದಶಿ",
+                "Chaturdashi": "ಚತುರ್ದಶಿ",
+                "Purnima": "ಪೌರ್ಣಮಿ",
+                "Amavasya": "ಅಮಾವಾಸ್ಯೆ",
+                "Raviwara": "ರವಿವಾರ",
+                "Somawara": "ಸೋಮವಾರ",
+                "Mangalawara": "ಮಂಗಳವಾರ",
+                "Budhawara": "ಬುಧವಾರ",
+                "Guruwara": "ಗುರುವಾರ",
+                "Shukrawara": "ಶುಕ್ರವಾರ",
+                "Shaniwara": "ಶನಿವಾರ",
+                "Jyeshtha": "ಜ್ಯೇಷ್ಠ",
+                "Jyeshtha (Adhik)": "ಅಧಿಕ ಜ್ಯೇಷ್ಠ",
+                "Ashadha": "ಆಷಾಢ",
+                "Shravana": "ಶ್ರಾವಣ",
+                "Bhadrapada": "ಭಾದ್ರಪದ",
+                "Ashwin": "ಆಶ್ವಯುಜ",
+                "Kartika": "ಕಾರ್ತಿಕ",
+                "Margashirsha": "ಮಾರ್ಗಶಿರ",
+                "Pausha": "ಪುಷ್ಯ",
+                "Magha": "ಮಾಘ",
+                "Phalguna": "ಫಾಲ್ಗುಣ",
+                "Chaitra": "ಚೈತ್ರ",
+                "Vaishakha": "ವೈಶಾಖ",
+                "Ashwini": "ಅಶ್ವಿನಿ",
+                "Bharani": "ಭರಣಿ",
+                "Krittika": "ಕೃತ್ತಿಕಾ",
+                "Rohini": "ರೋಹಿಣಿ",
+                "Mrigashira": "ಮೃಗಶಿರ",
+                "Ardra": "ಆರ್ದ್ರಾ",
+                "Punarvasu": "ಪುನರ್ವಸು",
+                "Pushya": "ಪುಷ್ಯ",
+                "Ashlesha": "ಆಶ್ಲೇಷ",
+                "Magha": "ಮಘಾ",
+                "Purva Phalguni": "ಪೂರ್ವ ಫಲ್ಗುಣಿ",
+                "Uttara Phalguni": "ಉತ್ತರ ಫಲ್ಗುಣಿ",
+                "Hasta": "ಹಸ್ತ",
+                "Chitra": "ಚಿತ್ರಾ",
+                "Swati": "ಸ್ವಾತಿ",
+                "Vishakha": "ವಿಶಾಖಾ",
+                "Anuradha": "ಅನುರಾಧಾ",
+                "Jyeshtha": "ಜ್ಯೇಷ್ಠಾ",
+                "Mula": "ಮೂಲ",
+                "Purva Ashadha": "ಪೂರ್ವಾಷಾಢ",
+                "Uttara Ashadha": "ಉತ್ತರಾಷಾಢ",
+                "Shravana": "ಶ್ರವಣ",
+                "Dhanishtha": "ಧನಿಷ್ಠಾ",
+                "Shatabhisha": "ಶತಭಿಷ",
+                "Purva Bhadrapada": "ಪೂರ್ವಭಾದ್ರಪದ",
+                "Uttara Bhadrapada": "ಉತ್ತರಭಾದ್ರಪದ",
+                "Revati": "ರೇವತಿ",
+                "Sukarma": "ಸುಕರ್ಮ",
+                "Dhriti": "ಧೃತಿ",
+                "Shula": "ಶೂಲ",
+                "Ganda": "ಗಂಡ",
+                "Vriddhi": "ವೃದ್ಧಿ",
+                "Dhruva": "ಧ್ರುವ",
+                "Harshana": "ಹರ್ಷಣ",
+                "Siddhi": "ಸಿದ್ಧಿ",
+                "Shubha": "ಶುಭ",
+                "Shiva": "ಶಿವ",
+                "Bava": "ಬವ",
+                "Balava": "ಬಾಲವ",
+                "Kaulava": "ಕೌಲವ",
+                "Taitila": "ತೈತಿಲ",
+                "Garaja": "ಗರಜ",
+                "Vanija": "ವಣಿಜ",
+                "Vishti": "ವಿಷ್ಟಿ",
+                "Shakuni": "ಶಕುನಿ",
+                "Naga": "ನಾಗ",
+                "Parana": "ಪಾರಣ",
+                "Arunodaya": "ಅರುಣೋದಯ",
+                "Upavaasa": "ಉಪವಾಸ",
+                "Upavasa": "ಉಪವಾಸ",
+                "Ekadashi Tithi start": "ಏಕಾದಶಿ ತಿಥಿ ಆರಂಭ",
+                "Ekadashi Tithi end": "ಏಕಾದಶಿ ತಿಥಿ ಅಂತ್ಯ",
+                "Upavaasa date": "ಉಪವಾಸ ದಿನಾಂಕ",
+                "Parana Time": "ಪಾರಣ ಸಮಯ",
+                "Sankranti Moment": "ಸಂಕ್ರಾಂತಿ ಕ್ಷಣ",
+                "Punya Kala": "ಪುಣ್ಯಕಾಲ",
+                "Maha Punya Kala": "ಮಹಾಪುಣ್ಯಕಾಲ",
+                "upto": "ರ ವರೆಗೆ",
+                "No Ekadashi Upavasa today as it is Dashami Viddha. Kindly do Upavasa tomorrow and lookup for Parana Time in tomorrow's panchanga.": "ಇಂದು ದಶಮಿ ವಿದ್ಧ ಇರುವುದರಿಂದ ಏಕಾದಶಿ ಉಪವಾಸ ಇಲ್ಲ. ದಯವಿಟ್ಟು ನಾಳೆ ಉಪವಾಸ ಮಾಡಿ ಮತ್ತು ಪಾರಣ ಸಮಯವನ್ನು ನಾಳೆಯ ಪಂಚಾಂಗದಲ್ಲಿ ನೋಡಿ.",
+                "Dashami Viddha": "ದಶಮಿ ವಿದ್ಧ",
+                "No Ekadashi Upavasa today": "ಇಂದು ಏಕಾದಶಿ ಉಪವಾಸ ಇಲ್ಲ",
+                "Full Night": "ಪೂರ್ಣ ರಾತ್ರಿ",
+                "Jan": "ಜನವರಿ",
+                "Feb": "ಫೆಬ್ರವರಿ",
+                "Mar": "ಮಾರ್ಚ್",
+                "Apr": "ಏಪ್ರಿಲ್",
+                "May": "ಮೇ",
+                "Jun": "ಜೂನ್",
+                "Jul": "ಜುಲೈ",
+                "Aug": "ಆಗಸ್ಟ್",
+                "Sep": "ಸೆಪ್ಟೆಂಬರ್",
+                "Oct": "ಅಕ್ಟೋಬರ್",
+                "Nov": "ನವೆಂಬರ್",
+                "Dec": "ಡಿಸೆಂಬರ್",
+                "India": "ಭಾರತ",
+                "United States": "ಅಮೆರಿಕಾ",
+                "Australia": "ಆಸ್ಟ್ರೇಲಿಯಾ",
+                "New Zealand": "ನ್ಯೂಜಿಲ್ಯಾಂಡ್",
+                "Queensland": "ಕ್ವೀನ್ಸ್‌ಲ್ಯಾಂಡ್",
+                "Victoria": "ವಿಕ್ಟೋರಿಯಾ",
+                "South Australia": "ದಕ್ಷಿಣ ಆಸ್ಟ್ರೇಲಿಯಾ",
+                "Western Australia": "ಪಶ್ಚಿಮ ಆಸ್ಟ್ರೇಲಿಯಾ",
+                "Australian Capital Territory": "ಆಸ್ಟ್ರೇಲಿಯನ್ ಕ್ಯಾಪಿಟಲ್ ಟೆರಿಟರಿ",
+                "New South Wales": "ನ್ಯೂ ಸೌತ್ ವೇಲ್ಸ್",
+                "Canterbury": "ಕ್ಯಾಂಟರ್ಬರಿ",
+                "Brisbane": "ಬ್ರಿಸ್ಬೇನ್",
+                "Melbourne": "ಮೆಲ್ಬರ್ನ್",
+                "Adelaide": "ಅಡಿಲೇಡ್",
+                "Perth": "ಪರ್ಥ್",
+                "Canberra": "ಕ್ಯಾನ್ಬೆರಾ",
+                "Sydney": "ಸಿಡ್ನಿ",
+                "Auckland": "ಆಕ್ಲೆಂಡ್",
+                "Wellington": "ವೆಲ್ಲಿಂಗ್ಟನ್",
+                "Christchurch": "ಕ್ರೈಸ್ಟ್‌ಚರ್ಚ್",
+                "Karnataka": "ಕರ್ನಾಟಕ",
+                "New York": "ನ್ಯೂಯಾರ್ಕ್",
+                "Florida": "ಫ್ಲೋರಿಡಾ",
+                "Texas": "ಟೆಕ್ಸಾಸ್",
+                "Illinois": "ಇಲಿನಾಯ್",
+                "California": "ಕ್ಯಾಲಿಫೋರ್ನಿಯಾ",
+                "Washington": "ವಾಷಿಂಗ್ಟನ್",
+                "Arizona": "ಅರಿಜೋನಾ",
+                "Telangana": "ತೆಲಂಗಾಣ",
+                "Maharashtra": "ಮಹಾರಾಷ್ಟ್ರ",
+                "Gujarat": "ಗುಜರಾತ್",
+                "Virginia": "ವರ್ಜೀನಿಯಾ",
+                "Maryland": "ಮೆರಿಲ್ಯಾಂಡ್",
+                "Pennsylvania": "ಪೆನ್ಸಿಲ್ವೇನಿಯಾ",
+                "Ohio": "ಒಹಾಯೊ",
+                "Tennessee": "ಟೆನೆಸಿ",
+                "North Carolina": "ಉತ್ತರ ಕ್ಯಾರೊಲೈನಾ",
+                "Indiana": "ಇಂಡಿಯಾನಾ",
+                "Bengaluru": "ಬೆಂಗಳೂರು",
+                "Mysuru": "ಮೈಸೂರು",
+                "Mangalore": "ಮಂಗಳೂರು",
+                "Udupi": "ಉಡುಪಿ",
+                "Hyderabad": "ಹೈದರಾಬಾದ್",
+                "Pune": "ಪುಣೆ",
+                "Surat": "ಸೂರತ್",
+                "Pittsford": "ಪಿಟ್ಸ್‌ಫರ್ಡ್",
+                "Greece": "ಗ್ರೀಸ್",
+                "Rochester": "ರೋಚೆಸ್ಟರ್",
+                "Chicago": "ಶಿಕಾಗೊ",
+                "Dallas": "ಡಲ್ಲಾಸ್",
+                "Houston": "ಹ್ಯೂಸ್ಟನ್",
+                "Phoenix": "ಫೀನಿಕ್ಸ್",
+                "Los Angeles": "ಲಾಸ್ ಏಂಜಲೀಸ್",
+                "San Francisco": "ಸ್ಯಾನ್ ಫ್ರಾನ್ಸಿಸ್ಕೊ",
+                "Seattle": "ಸಿಯಾಟಲ್",
+                "Tampa": "ಟ್ಯಾಂಪಾ",
+                "Orlando": "ಒರ್ಲ್ಯಾಂಡೊ",
+                "Richmond": "ರಿಚ್ಮಂಡ್",
+                "Baltimore": "ಬಾಲ್ಟಿಮೋರ್",
+                "Philadelphia": "ಫಿಲಡೆಲ್ಫಿಯಾ",
+                "Buffalo": "ಬಫಲೋ",
+                "Cleveland": "ಕ್ಲೀವ್‌ಲ್ಯಾಂಡ್",
+                "Columbus": "ಕೊಲಂಬಸ್",
+                "Cincinnati": "ಸಿನ್ಸಿನಾಟಿ",
+                "Knoxville": "ನಾಕ್ಸ್‌ವಿಲ್",
+                "Syracuse": "ಸಿರಾಕ್ಯೂಸ್",
+                "Charlotte": "ಶಾರ್ಲಟ್",
+                "Raleigh": "ರಾಲಿ",
+                "T Narasipura": "ತಿ. ನರಸೀಪುರ",
+                "Udipi": "ಉಡುಪಿ",
+                "Vadodara": "ವಡೋದರಾ",
+                "Stonybrook": "ಸ್ಟೋನಿಬ್ರೂಕ್",
+                "Stony Brook": "ಸ್ಟೋನಿ ಬ್ರೂಕ್",
+                "Lafayette": "ಲಾಫಯೆಟ್",
+                "Georgia": "ಜಾರ್ಜಿಯಾ",
+                "Tamil Nadu": "ತಮಿಳುನಾಡು",
+                "Kerala": "ಕೇರಳ",
+                "West Bengal": "ಪಶ್ಚಿಮ ಬಂಗಾಳ",
+                "Odisha": "ಒಡಿಶಾ",
+                "Andhra Pradesh": "ಆಂಧ್ರ ಪ್ರದೇಶ",
+                "Madhya Pradesh": "ಮಧ್ಯ ಪ್ರದೇಶ",
+                "Uttar Pradesh": "ಉತ್ತರ ಪ್ರದೇಶ",
+                "Jammu and Kashmir": "ಜಮ್ಮು ಮತ್ತು ಕಾಶ್ಮೀರ",
+                "Placentia": "ಪ್ಲಸೆನ್ಷಿಯಾ",
+                "Atlanta": "ಅಟ್ಲಾಂಟಾ",
+                "Chennai": "ಚೆನ್ನೈ",
+                "Thiruvananthapuram": "ತಿರುವನಂತಪುರಂ",
+                "Trivandrum": "ತಿರುವನಂತಪುರಂ",
+                "Mumbai": "ಮುಂಬೈ",
+                "Kolkata": "ಕೊಲ್ಕತ್ತಾ",
+                "Bhubaneswar": "ಭುವನೇಶ್ವರ",
+                "Bhuvaneshwar": "ಭುವನೇಶ್ವರ",
+                "Bhubaneshwar": "ಭುವನೇಶ್ವರ",
+                "Tirupati": "ತಿರುಪತಿ",
+                "Tirupathi": "ತಿರುಪತಿ",
+                "Bhopal": "ಭೋಪಾಲ್",
+                "Varanasi": "ವಾರಾಣಸಿ",
+                "Prayagraj": "ಪ್ರಯಾಗರಾಜ್",
+                "Allahabad": "ಪ್ರಯಾಗರಾಜ್",
+                "Ayodhya": "ಅಯೋಧ್ಯೆ",
+                "Lucknow": "ಲಖನೌ",
+                "Srinagar": "ಶ್ರೀನಗರ",
+                "Dubai": "ದುಬೈ",
+                "Doha": "ದೋಹಾ",
+                "Zurich": "ಜ್ಯೂರಿಕ್",
+                "Esslingen": "ಎಸ್ಲಿಂಗನ್",
+                "Baladīyat ad Dawḩah": "ಬಲದಿಯತ್ ಅಡ್ ದವ್ಹಾ",
+                "Baladiyat ad Dawhah": "ಬಲದಿಯತ್ ಅಡ್ ದವ್ಹಾ",
+                "United Arab Emirates": "ಯುನೈಟೆಡ್ ಅರಬ್ ಎಮಿರೇಟ್ಸ್",
+                "Qatar": "ಕತಾರ್",
+                "Switzerland": "ಸ್ವಿಟ್ಜರ್ಲ್ಯಾಂಡ್",
+                "Germany": "ಜರ್ಮನಿ",
+                "Agartala": "ಅಗರ್ತಲಾ",
+                "Guwahati": "ಗುವಾಹಟಿ",
+                "Shiliguri": "ಶಿಲಿಗುರಿ",
+                "Siliguri": "ಸಿಲಿಗುರಿ",
+                "Aizawl": "ಐಜಾಲ್",
+                "Gangtok": "ಗ್ಯಾಂಗ್ಟಾಕ್",
+                "Silchar": "ಸಿಲ್ಚರ್",
+                "Dibrugarh": "ಡಿಬ್ರುಗಢ",
+                "Imphal": "ಇಂಫಾಲ್",
+                "Dimapur": "ದಿಮಾಪುರ್",
+                "Itanagar": "ಇಟಾನಗರ",
+                "Madurai": "ಮದುರೈ",
+                "Kumbakonam": "ಕುಂಭಕೋಣಂ",
+                "Chidambaram": "ಚಿದಂಬರಂ",
+                "Kanchipuram": "ಕಾಂಚೀಪುರಂ",
+                "Srirangam": "ಶ್ರೀರಂಗಂ",
+                "Tiruchirappalli": "ತಿರುಚಿರಾಪಳ್ಳಿ",
+                "Guruvayur": "ಗುರುವಾಯೂರು",
+                "Pandharpur": "ಪಂಡರಪುರ",
+                "Kolhapur": "ಕೊಲ್ಹಾಪುರ",
+                "Nagpur": "ನಾಗಪುರ",
+                "Visakhapatnam": "ವಿಶಾಖಪಟ್ಟಣಂ",
+                "Ajodhya": "ಅಯೋಧ್ಯೆ",
+                "Baroda": "ಬರೋಡಾ",
+                "Tripura": "ತ್ರಿಪುರ",
+                "Assam": "ಅಸ್ಸಾಂ",
+                "Mizoram": "ಮಿಜೋರಾಂ",
+                "Sikkim": "ಸಿಕ್ಕಿಂ",
+                "Manipur": "ಮಣಿಪುರ",
+                "Nagaland": "ನಾಗಾಲ್ಯಾಂಡ್",
+                "Arunachal Pradesh": "ಅರುಣಾಚಲ ಪ್ರದೇಶ",
+                "Andra Pradesh": "ಆಂಧ್ರ ಪ್ರದೇಶ",
+                "Nashville": "ನ್ಯಾಶ್‌ವಿಲ್"
+            };
+
+            const originals = new WeakMap();
+
+            function replaceTerms(text) {
+                let output = text;
+                const entries = Object.entries(terms)
+                    .sort((a, b) => b[0].length - a[0].length);
+
+                for (const [english, kannada] of entries) {
+                    output = output.split(english).join(kannada);
+                }
+
+                output = output.replace(
+                    /(\d{1,2}:\d{2})\s*AM\b/g,
+                    "ಬೆಳಿಗ್ಗೆ $1"
+                );
+                output = output.replace(
+                    /(\d{1,2}:\d{2})\s*PM\b/g,
+                    "ಸಂಜೆ $1"
+                );
+
+                output = output.replace(/ರವರೆಗೆ/g, "ರ ವರೆಗೆ");
+
+                // Reorder Kannada timing phrases into the natural format:
+                // ಬೆಳಿಗ್ಗೆ/ಸಂಜೆ <time>, <date if any> ರ ವರೆಗೆ
+                //
+                // Examples:
+                // ಪಂಚಮಿ ರ ವರೆಗೆ ಬೆಳಿಗ್ಗೆ 06:16
+                // -> ಪಂಚಮಿ ಬೆಳಿಗ್ಗೆ 06:16 ರ ವರೆಗೆ
+                //
+                // ಪೂರ್ವ ಫಲ್ಗುಣಿ ರ ವರೆಗೆ ಬೆಳಿಗ್ಗೆ 12:01, ಜೂನ್ 21
+                // -> ಪೂರ್ವ ಫಲ್ಗುಣಿ ಬೆಳಿಗ್ಗೆ 12:01, ಜೂನ್ 21 ರ ವರೆಗೆ
+                output = output.replace(
+                    /ರ ವರೆಗೆ\s+(ಬೆಳಿಗ್ಗೆ|ಸಂಜೆ)\s+(\d{1,2}:\d{2})(\s*,\s*[^;|]+)?/g,
+                    function (_, dayPart, time, optionalDate) {
+                        const datePart = optionalDate
+                            ? optionalDate.replace(/\s*,\s*/, ", ")
+                            : "";
+
+                        return `${dayPart} ${time}${datePart} ರ ವರೆಗೆ`;
+                    }
+                );
+
+                return output;
+            }
+
+            function translateElement(element, language) {
+                if (!originals.has(element)) {
+                    originals.set(
+                        element,
+                        element.dataset.original || element.textContent
+                    );
+                }
+
+                const original = originals.get(element);
+                element.textContent =
+                    language === "kn" ? replaceTerms(original) : original;
+            }
+
+            function formatDateElement(element, language) {
+                const value = element.dataset.dateValue;
+                if (!value) return;
+
+                const parts = value.split("-").map(Number);
+                const date = new Date(parts[0], parts[1] - 1, parts[2], 12);
+
+                element.textContent = date.toLocaleDateString(
+                    language === "kn" ? "kn-IN" : "en-US",
+                    {
+                        weekday: "long",
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric"
+                    }
+                );
+            }
+
+            function formatDateNavigation(language) {
+                document.querySelectorAll("#date-navigation .date-item-label")
+                    .forEach(element => {
+                        const value = element.dataset.dateValue || "";
+                        const match = value.match(
+                            /(\d{4})-(\d{2})-(\d{2})\.html/
+                        );
+                        if (!match) return;
+
+                        const date = new Date(
+                            Number(match[1]),
+                            Number(match[2]) - 1,
+                            Number(match[3]),
+                            12
+                        );
+
+                        let label = date.toLocaleDateString(
+                            language === "kn" ? "kn-IN" : "en-US",
+                            {
+                                weekday: "long",
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric"
+                            }
+                        );
+
+                        if (
+                            element.classList.contains("unavailable-date")
+                        ) {
+                            label += language === "kn"
+                                ? " — ಲಭ್ಯವಿಲ್ಲ"
+                                : " — Not available";
+                        }
+
+                        element.textContent = label;
+                    });
+            }
+
+            function applyLanguage(language) {
+                document.documentElement.lang =
+                    language === "kn" ? "kn" : "en";
+
+                document.querySelectorAll("[data-i18n-fixed]")
+                    .forEach(element => {
+                        const key = element.dataset.i18nFixed;
+                        element.textContent =
+                            fixedTranslations[language][key]
+                            || fixedTranslations.en[key]
+                            || element.textContent;
+                    });
+
+                document.querySelectorAll(
+                    "[data-i18n-label], [data-i18n-value]"
+                ).forEach(element => translateElement(element, language));
+
+                document.querySelectorAll("[data-city-source]")
+                    .forEach(element => {
+                        const city = element.dataset.citySource;
+                        element.textContent =
+                            language === "kn"
+                                ? `${replaceTerms(city)} ಪಂಚಾಂಗವನ್ನು ದೃಕ್ ಪಂಚಾಂಗದಲ್ಲಿ ನೋಡಿ`
+                                : `View ${city} Panchanga on Drik Panchang`;
+                    });
+
+                formatDateElement(
+                    document.getElementById("page-date"),
+                    language
+                );
+                formatDateNavigation(language);
+
+                localStorage.setItem(
+                    "panchangaLanguage",
+                    language
+                );
+            }
+
+            const selector = document.getElementById("language-select");
+            const saved =
+                localStorage.getItem("panchangaLanguage") || "en";
+
+            selector.value = saved;
+            selector.addEventListener(
+                "change",
+                event => applyLanguage(event.target.value)
+            );
+
+            applyLanguage(saved);
+        })();
+    </script>
+<!-- Cloudflare Web Analytics --><script data-cf-beacon='{"token": "729f54527b434683a9be9468e7cf4a8a"}' defer="" src="https://static.cloudflareinsights.com/beacon.min.js"></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
