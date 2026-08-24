@@ -4864,6 +4864,22 @@
                 return output;
             }
 
+            function renderSimpleBold(element, text) {
+                element.textContent = "";
+                const parts = String(text).split("**");
+
+                parts.forEach((part, index) => {
+                    if (!part) return;
+                    if (index % 2 === 1) {
+                        const strong = document.createElement("strong");
+                        strong.textContent = part;
+                        element.appendChild(strong);
+                    } else {
+                        element.appendChild(document.createTextNode(part));
+                    }
+                });
+            }
+
             function translateElement(element, language) {
                 if (!originals.has(element)) {
                     originals.set(
@@ -4873,8 +4889,14 @@
                 }
 
                 const original = originals.get(element);
-                element.textContent =
+                const translated =
                     language === "kn" ? replaceTerms(original) : original;
+
+                if (element.dataset.simpleBold === "true") {
+                    renderSimpleBold(element, translated);
+                } else {
+                    element.textContent = translated;
+                }
             }
 
             function formatDateElement(element, language) {
