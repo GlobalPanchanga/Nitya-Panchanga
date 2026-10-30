@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panchanga 2027</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f5ef;color:#20372f;font:17px/1.55 system-ui,sans-serif}main{max-width:850px;margin:45px auto;padding:0 24px}header{border-bottom:1px solid #d7ddd4;padding-bottom:24px}.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#63776b}h1{font:normal 42px/1.15 Georgia,serif;margin:12px 0}.muted{color:#65776d;font-size:15px}section{margin-top:24px;padding:24px;background:white;border:1px solid #dce2d8;border-radius:14px}button,input,select{font:inherit}button{cursor:pointer;border:1px solid #b7c8bd;border-radius:8px;padding:9px 14px;background:white;color:#20372f}button:hover{background:#edf3ed}input,select{width:100%;padding:12px;border:1px solid #abbeb0;border-radius:8px;margin:8px 0}#results{list-style:none;padding:0;max-height:320px;overflow:auto}#results button{width:100%;text-align:left;margin-bottom:6px}#results small{display:block;color:#65776d}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.row h2{flex:1;margin:0;font-size:24px}dl{display:grid;grid-template-columns:150px 1fr;gap:12px}dt{color:#65776d}dd{margin:0}a{color:#246451}[hidden]{display:none!important}#notice{font-size:14px}footer{margin-top:24px;font-size:14px;color:#65776d}
+.ekadashi-events{padding:20px;margin-top:24px;border-color:#b7c8bd;background:#f8fbf7}.ekadashi-events h2{font:normal 27px Georgia,serif;margin:0 0 16px}.ekadashi-event+.ekadashi-event{border-top:1px solid #dce2d8;padding-top:16px;margin-top:16px}.ekadashi-event h3{font-size:21px;margin:0 0 10px}.event-message{font-weight:600;margin:8px 0}.event-details{color:#435c50;font-size:15px;margin:8px 0}@media(max-width:540px){main{padding:0 14px;margin:24px auto}section{padding:16px}dl{grid-template-columns:110px 1fr;gap:10px}h1{font-size:34px}}
+</style>
+<main><header><div class="eyebrow">Daily Panchanga · 2027</div><h1>Your daily Panchanga</h1><label for="day">Choose a date in 2027</label><input type="date" id="day" min="2027-01-01" max="2027-12-31"><p class="muted">Choose your city once. The next daily link remembers it in this browser.</p></header>
+<section id="current" hidden><div class="row"><h2 id="city"></h2><button id="change">Change city</button></div><p id="location" class="muted"></p><button id="share">Copy link for this city and date</button><div id="details" aria-live="polite"></div></section>
+<section id="chooser"><h2>Find your city</h2><label for="search">City or alternate name</label><input id="search" type="search" placeholder="Try Fremont, Bengaluru or Bangalore" autocomplete="off"><label for="country">Browse by country</label><select id="country"><option value="">All countries</option></select><p id="count" class="muted" aria-live="polite"></p><ul id="results"></ul></section><p id="notice" role="status"></p><footer>All 2,237 locations · Every day of 2027. Ekadashi fasting guidance and Parana times included. All times are local to your selected city.</footer></main>
+<script>
+const $=s=>document.querySelector(s), key='panchanga.expansion2027.city', params=new URLSearchParams(location.search);
+let places=[],selected=null,renderVersion=0;
+const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ');
+function readSaved(){try{return localStorage.getItem(key)}catch{return null}}
+function save(id){try{localStorage.setItem(key,id)}catch{$('#notice').textContent='This browser cannot save your choice. Bookmark the city-specific link to return directly.'}}
+function findPlace(id){return places.find(p=>p.place_id===id||(p.legacy_place_ids||[]).includes(id))}
+function validDay(d){return /^2027-\d{2}-\d{2}$/.test(d)&&!isNaN(Date.parse(d))&&new Date(d).toISOString().slice(0,10)===d}
+function day(){return $('#day').value}
+function dateURL(withCity){const u=new URL(location.href);u.search='';u.searchParams.set('date',day());if(withCity&&selected)u.searchParams.set('city',selected.place_id);return u}
+function updateURL(){history.replaceState(null,'',dateURL(params.has('city')))}
+function list(){const q=normalize($('#search').value),cc=$('#country').value;const rows=places.filter(p=>(!cc||p.country_code===cc)&&(!q||normalize([p.city,p.state_or_region,p.country,...p.aliases].join(' ')).includes(q)));$('#count').textContent=`${rows.length} matching places${rows.length>50?' · first 50 shown; type more to narrow the list':''}`;$('#results').replaceChildren();rows.slice(0,50).forEach(p=>{const li=document.createElement('li'),b=document.createElement('button'),n=document.createElement('span'),s=document.createElement('small');n.textContent=p.city;s.textContent=[p.state_or_region,p.country].filter(Boolean).join(', ');b.append(n,s);b.onclick=()=>choose(p,true);li.append(b);$('#results').append(li)})}
+let yearManifest=null;
+const cityDataCache=new Map();
+async function loadYearRow(place,requestedDay){
+  if(!yearManifest){
+    const response=await fetch('year2027/manifest.json',{cache:'no-store'});
+    if(!response.ok)throw Error('Could not load the full-year catalog');
+    yearManifest=await response.json();
+  }
+  const filename=yearManifest.files[place.place_id];
+  if(!filename)throw Error('City missing from full-year catalog');
+  let payload=cityDataCache.get(place.place_id);
+  if(!payload){
+    const response=await fetch(`year2027/${filename}`);
+    if(!response.ok)throw Error('Could not load city data');
+    payload=await response.json();
+    if(payload.place_id!==place.place_id)throw Error('City identity mismatch');
+    if(cityDataCache.size>=5)cityDataCache.delete(cityDataCache.keys().next().value);
+    cityDataCache.set(place.place_id,payload);
+  }
+  const values=payload.days[requestedDay];
+  if(!values)throw Error('Date missing from full-year data');
+  return Object.fromEntries(payload.fields.map((field,i)=>[field,values[i]]));
+}
+let eventManifest=null;
+const eventDataCache=new Map();
+async function loadEkadashiRows(place,requestedDay){
+  if(!eventManifest){
+    const response=await fetch('events2027/manifest.json',{cache:'no-store'});
+    if(!response.ok)throw Error('Could not load Ekadashi catalog');
+    eventManifest=await response.json();
+  }
+  const filename=eventManifest.files[place.place_id];
+  if(!filename)throw Error('City missing from Ekadashi catalog');
+  let payload=eventDataCache.get(place.place_id);
+  if(!payload){
+    const response=await fetch(`events2027/${filename}`);
+    if(!response.ok)throw Error('Could not load Ekadashi events');
+    payload=await response.json();
+    if(payload.place_id!==place.place_id)throw Error('Ekadashi city identity mismatch');
+    if(eventDataCache.size>=5)eventDataCache.delete(eventDataCache.keys().next().value);
+    eventDataCache.set(place.place_id,payload);
+  }
+  return payload.days[requestedDay]||[];
+}
+function renderEkadashis(rows){
+  const section=document.createElement('section');section.className='ekadashi-events';
+  const heading=document.createElement('h2');heading.textContent='Ekadashi';section.append(heading);
+  if(!rows.length){const p=document.createElement('p');p.textContent='No Ekadashi observance today.';section.append(p);return section;}
+  for(const [name,message,details,role] of rows){
+    const card=document.createElement('article');card.className='ekadashi-event';card.dataset.role=role;
+    const h=document.createElement('h3');h.textContent=name;
+    const guidance=document.createElement('p');guidance.className='event-message';guidance.textContent=message;
+    const timing=document.createElement('p');timing.className='event-details';timing.textContent=details;
+    card.append(h,guidance,timing);section.append(card);
+  }
+  return section;
+}
+
+async function choose(p,persist){
+  selected=p;if(persist)save(p.place_id);
+  $('#city').textContent=p.city;
+  $('#location').textContent=[p.state_or_region,p.country,p.timezone].filter(Boolean).join(' · ');
+  $('#current').hidden=false;$('#chooser').hidden=true;updateURL();
+  const version=++renderVersion,requestedDay=day();
+  $('#details').textContent='Loading…';
+  try{
+    const [row,events]=await Promise.all([loadYearRow(p,requestedDay),loadEkadashiRows(p,requestedDay)]);
+    if(version!==renderVersion)return;
+    const dl=document.createElement('dl');
+    for(const field of ['Samvatsara','Ayana','Ritu','Amanta Maasa','Paksha','Tithi','Vaara','Nakshatra','Yoga','Karana','Sooryodaya']){
+      const dt=document.createElement('dt'),dd=document.createElement('dd');
+      dt.textContent=field;dd.textContent=row[field]||'—';dl.append(dt,dd);
+    }
+    const dateLabel=document.createElement('p');dateLabel.textContent='Date: '+row.Date;
+    $('#details').replaceChildren(dateLabel,dl,renderEkadashis(events));
+  }catch(error){
+    if(version===renderVersion)$('#details').textContent='Unable to load this Panchanga. Please refresh and try again.';
+  }
+}
+
+$('#search').oninput=list;$('#country').onchange=list;$('#change').onclick=()=>{$('#chooser').hidden=false;$('#search').focus()};$('#day').onchange=()=>{if(!validDay(day())){$('#notice').textContent='Choose a valid date in 2027.';return}updateURL();if(selected)choose(selected,false)};
+$('#share').onclick=async()=>{const link=dateURL(true).href;try{await navigator.clipboard.writeText(link);$('#notice').textContent='City-specific link copied.'}catch{$('#notice').textContent=link}};
+(async()=>{const requested=params.get('date');$('#day').value=validDay(requested||'')?requested:'2027-01-15';if(requested&&!validDay(requested))$('#notice').textContent='Invalid date in link. Showing January 15, 2027.';places=await(await fetch('places.json')).json();const countries=[...new Map(places.map(p=>[p.country_code,p.country])).entries()].sort((a,b)=>a[1].localeCompare(b[1]));for(const [code,name] of countries){const o=document.createElement('option');o.value=code;o.textContent=name;$('#country').append(o)}list();const explicit=params.get('city'),id=explicit||readSaved(),p=findPlace(id);if(p)choose(p,Boolean(explicit)||p.place_id!==id);else if(id)$('#notice').textContent='That city could not be found. Please choose your city below.'})().catch(()=>$('#notice').textContent='Could not load the city list. Serve this folder through a local web server.');
+</script></html>
