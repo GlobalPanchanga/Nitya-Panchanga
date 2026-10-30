@@ -11,7 +11,7 @@
 <script>
 const $=s=>document.querySelector(s), key='panchanga.expansion2027.city', params=new URLSearchParams(location.search);
 let places=[],selected=null,renderVersion=0;
-const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ');
+const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function readSaved(){try{return localStorage.getItem(key)}catch{return null}}
 function save(id){try{localStorage.setItem(key,id)}catch{$('#notice').textContent='This browser cannot save your choice. Bookmark the city-specific link to return directly.'}}
 function findPlace(id){return places.find(p=>p.place_id===id||(p.legacy_place_ids||[]).includes(id))}
@@ -19,7 +19,26 @@ function validDay(d){return /^2027-\d{2}-\d{2}$/.test(d)&&!isNaN(Date.parse(d))&
 function day(){return $('#day').value}
 function dateURL(withCity){const u=new URL(location.href);u.search='';u.searchParams.set('date',day());if(withCity&&selected)u.searchParams.set('city',selected.place_id);return u}
 function updateURL(){history.replaceState(null,'',dateURL(params.has('city')))}
-function list(){const q=normalize($('#search').value),cc=$('#country').value;const rows=places.filter(p=>(!cc||p.country_code===cc)&&(!q||normalize([p.city,p.state_or_region,p.country,...p.aliases].join(' ')).includes(q)));$('#count').textContent=`${rows.length} matching places${rows.length>50?' · first 50 shown; type more to narrow the list':''}`;$('#results').replaceChildren();rows.slice(0,50).forEach(p=>{const li=document.createElement('li'),b=document.createElement('button'),n=document.createElement('span'),s=document.createElement('small');n.textContent=p.city;s.textContent=[p.state_or_region,p.country].filter(Boolean).join(', ');b.append(n,s);b.onclick=()=>choose(p,true);li.append(b);$('#results').append(li)})}
+function citySearchRank(place,query){
+  const city=normalize(place.city),aliases=(place.aliases||[]).map(normalize);
+  if(city===query)return 0;
+  if(aliases.includes(query))return 1;
+  if(city.startsWith(query))return 2;
+  if(aliases.some(name=>name.startsWith(query)))return 3;
+  if(city.split(' ').some(word=>word.startsWith(query)))return 4;
+  if(aliases.some(name=>name.split(' ').some(word=>word.startsWith(query))))return 5;
+  if(city.includes(query))return 6;
+  if(aliases.some(name=>name.includes(query)))return 7;
+  return Infinity;
+}
+function list(){
+  const q=normalize($('#search').value),cc=$('#country').value;
+  let rows=places.filter(p=>!cc||p.country_code===cc);
+  if(q)rows=rows.map(place=>({place,rank:citySearchRank(place,q)})).filter(item=>Number.isFinite(item.rank)).sort((a,b)=>a.rank-b.rank||a.place.city.localeCompare(b.place.city,'en',{sensitivity:'base'})||a.place.country.localeCompare(b.place.country)||a.place.place_id.localeCompare(b.place.place_id)).map(item=>item.place);
+  $('#count').textContent=`${rows.length} matching places${rows.length>50?' · first 50 shown; type more to narrow the list':''}`;
+  $('#results').replaceChildren();
+  rows.slice(0,50).forEach(p=>{const li=document.createElement('li'),b=document.createElement('button'),n=document.createElement('span'),s=document.createElement('small');n.textContent=p.city;s.textContent=[p.state_or_region,p.country].filter(Boolean).join(', ');b.append(n,s);b.onclick=()=>choose(p,true);li.append(b);$('#results').append(li)});
+}
 let yearManifest=null;
 const cityDataCache=new Map();
 async function loadYearRow(place,requestedDay){
