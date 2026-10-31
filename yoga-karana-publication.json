@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "complete_sequences_2026": 73730,
+  "complete_sequences_2027": 1633010,
+  "direct_engine_comparisons": 60,
+  "served_files_match": true,
+  "greece_oct31": {
+    "Yoga": "Siddha upto 08:01 AM; Sadhya upto 04:09 AM, Nov 01; Shubha until next sunrise",
+    "Karana": "Vishti upto 06:22 PM; Bava upto 04:22 AM, Nov 01; Balava until next sunrise"
+  },
+  "policy": "Every period from sunrise through next sunrise; final period until next sunrise",
+  "release_date": "2026-10-31",
+  "publication_2027_sha256": "ea5dea2451c84acfa994f761c5b13b49c830b8d9d990dcdd615e5c440e5e10a9",
+  "sample_2026_sha256": "94b96fcd6a40f4e47aebdb3ff5a0519d2c1ff9364147dd8f2e8495626f75f47b"
+}
