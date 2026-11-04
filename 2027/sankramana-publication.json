@@ -66,5 +66,6 @@
       "sha256": "79b245a6c519a2ee106f54747a2946c090edd3f12b3be2abc5d068bd431d51b4",
       "records": 2237
     }
-  }
+  },
+  "presentation_version": "SIMPLE_EVENT_MESSAGES_V2"
 }

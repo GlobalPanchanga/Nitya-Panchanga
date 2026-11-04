@@ -20,7 +20,7 @@ function renderSankramanas(rows,weekly=false){
   for(const [name,message,details,role] of rows){
     const card=document.createElement('article');card.className=weekly?'sankramana-event event':'sankramana-event';card.dataset.role=role;
     const title=document.createElement(weekly?'h4':'h3');title.textContent=name;
-    const guidance=document.createElement('p');guidance.className='event-message';guidance.textContent=message;
+    const guidance=document.createElement('p');guidance.className='event-message';guidance.textContent=`Observe ${name} today. Refer to the Punya Kala and Maha Punya Kala timings below for spiritual activities.`;
     const timing=document.createElement('p');timing.className='event-details';timing.textContent=details;
     card.append(title,guidance,timing);section.append(card);
   }

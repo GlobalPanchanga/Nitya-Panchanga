@@ -7,10 +7,10 @@
   "assets": {
     "weekly.html": "f235bdd45db38dba420b58b4617a4c498829d98424f74705299742c6dbc24a0f",
     "weekly.css": "0e2e193f7361d67009f0da130fbf594cddd83ed51efa6a2a5f8d6d29675f41a0",
-    "weekly.js": "3479349d6965cde8addaf3e3eaae41839bd5e4a08cdc87b45bf1055573d8e018",
-    "sankramana.js": "7d038c29bcf778d1796b72dec414b454c168540647d2ca42030d59949c65a646"
+    "weekly.js": "24a87e38471a8a4954e5a5798027451c1201a5d9cfdb1ae255549d88013e1bd6",
+    "sankramana.js": "c4c0b9d8019064746ffc5d8adc3f666824bde8ab5616b898c63528e1b3198147"
   },
-  "existing_search_page_sha256": "75cc4497984b1f8921e71491dd8b36fd26a650a316cf26d47ddddc4f5450f321",
+  "existing_search_page_sha256": "e482d7fd71c20614882920cee02bb8ae371d8cb506ecfc68d97dc976fe4b1f7c",
   "shared_astronomy_manifest_sha256": "578fd553dc641af8777de4278a333c6833c30b55994df32a1411a6c5abf6dec4",
   "shared_ekadashi_manifest_sha256": "6e5d514f50e8aceb9bcae75534f57b7137545008031db152b80996539a6ddf8b",
   "shared_sankramana_manifest_sha256": "6c7fc524899c7d8e05377bb9e2410e3dc607624da209d5ab4b1e8c57b076f3bd"

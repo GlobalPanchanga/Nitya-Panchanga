@@ -88,7 +88,6 @@ async function loadEkadashiRows(place,requestedDay){
 function renderEkadashis(rows){
   const section=document.createElement('section');section.className='ekadashi-events';
   const heading=document.createElement('h2');heading.textContent='Ekadashi';section.append(heading);
-  if(!rows.length){const p=document.createElement('p');p.textContent='No Ekadashi observance today.';section.append(p);return section;}
   for(const [name,message,details,role] of rows){
     const card=document.createElement('article');card.className='ekadashi-event';card.dataset.role=role;
     const h=document.createElement('h3');h.textContent=name;
@@ -115,7 +114,7 @@ async function choose(p,persist){
       dt.textContent=field;dd.textContent=row[field]||'—';dl.append(dt,dd);
     }
     const dateLabel=document.createElement('p');dateLabel.textContent='Date: '+row.Date;
-    $('#details').replaceChildren(dateLabel,dl,renderEkadashis(events),...(sankramanas.length?[renderSankramanas(sankramanas)]:[]));
+    $('#details').replaceChildren(dateLabel,dl,...(events.length?[renderEkadashis(events)]:[]),...(sankramanas.length?[renderSankramanas(sankramanas)]:[]));
   }catch(error){
     if(version===renderVersion)$('#details').textContent='Unable to load this Panchanga. Please refresh and try again.';
   }

@@ -29,10 +29,10 @@ async function cityPayload(place,kind){const cache=kind==='base'?baseCache:event
 }
 function renderData(row,events,content){const dl=document.createElement('dl');
  for(const key of ['Samvatsara','Ayana','Ritu','Amanta Maasa','Paksha','Tithi','Vaara','Nakshatra','Yoga','Karana','Sooryodaya']){const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=key;dd.textContent=row[key]||'—';dl.append(dt,dd);}
+ content.replaceChildren(dl);if(!events.length)return;
  const block=document.createElement('section');block.className='events';const h=document.createElement('h3');h.textContent='Ekadashi';block.append(h);
- if(!events.length){const p=document.createElement('p');p.className='no-event';p.textContent='No Ekadashi observance today.';block.append(p);}
  for(const [name,message,details,role] of events){const card=document.createElement('article');card.className='event';card.dataset.role=role;const title=document.createElement('h4'),action=document.createElement('p'),time=document.createElement('p');title.textContent=name;action.className='event-message';action.textContent=message;time.className='event-details';time.textContent=details;card.append(title,action,time);block.append(card);}
- content.replaceChildren(dl,block);
+ content.append(block);
 }
 async function openCity(place,card){const day=selectedDay,version=revision;selectedId=place.place_id;remember(selectedId);updateURL();
  document.querySelectorAll('.city-card[open]').forEach(other=>{if(other!==card)other.open=false;});
