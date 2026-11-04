@@ -5,11 +5,13 @@
   "letters": 26,
   "prefix_groups": 218,
   "assets": {
-    "weekly.html": "2585920304c0ec73c4a5b4c6de9586151c4de45b9c45608db1875e9d17e22178",
+    "weekly.html": "f235bdd45db38dba420b58b4617a4c498829d98424f74705299742c6dbc24a0f",
     "weekly.css": "0e2e193f7361d67009f0da130fbf594cddd83ed51efa6a2a5f8d6d29675f41a0",
-    "weekly.js": "85cf416d5e05b125ce568c19632ca2334ccdaec66a9fb73cae22c326c1d32f38"
+    "weekly.js": "3479349d6965cde8addaf3e3eaae41839bd5e4a08cdc87b45bf1055573d8e018",
+    "sankramana.js": "7d038c29bcf778d1796b72dec414b454c168540647d2ca42030d59949c65a646"
   },
-  "existing_search_page_sha256": "f9f944d26098d8e8df7a580427316cdf90d42d8e5bc791a0604beb6146fa3860",
+  "existing_search_page_sha256": "75cc4497984b1f8921e71491dd8b36fd26a650a316cf26d47ddddc4f5450f321",
   "shared_astronomy_manifest_sha256": "578fd553dc641af8777de4278a333c6833c30b55994df32a1411a6c5abf6dec4",
-  "shared_ekadashi_manifest_sha256": "6e5d514f50e8aceb9bcae75534f57b7137545008031db152b80996539a6ddf8b"
+  "shared_ekadashi_manifest_sha256": "6e5d514f50e8aceb9bcae75534f57b7137545008031db152b80996539a6ddf8b",
+  "shared_sankramana_manifest_sha256": "6c7fc524899c7d8e05377bb9e2410e3dc607624da209d5ab4b1e8c57b076f3bd"
 }

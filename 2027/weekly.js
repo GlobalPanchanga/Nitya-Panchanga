@@ -37,10 +37,10 @@ function renderData(row,events,content){const dl=document.createElement('dl');
 async function openCity(place,card){const day=selectedDay,version=revision;selectedId=place.place_id;remember(selectedId);updateURL();
  document.querySelectorAll('.city-card[open]').forEach(other=>{if(other!==card)other.open=false;});
  const content=card.querySelector('.city-content');if(content.dataset.loaded===day)return;content.textContent='Loading Panchanga…';
- try{const [base,event]=await Promise.all([cityPayload(place,'base'),cityPayload(place,'events')]);
+ try{const [base,event,sankramanas]=await Promise.all([cityPayload(place,'base'),cityPayload(place,'events'),loadSankramanaRows(place,day)]);
   if(version!==revision||day!==selectedDay||!card.isConnected)return;
   const values=base.days[day];if(!values)throw Error('Date missing from city data');
-  const row=Object.fromEntries(base.fields.map((field,i)=>[field,values[i]]));renderData(row,event.days[day]||[],content);content.dataset.loaded=day;
+  const row=Object.fromEntries(base.fields.map((field,i)=>[field,values[i]]));renderData(row,event.days[day]||[],content);if(sankramanas.length)content.append(renderSankramanas(sankramanas,true));content.dataset.loaded=day;
  }catch(error){if(version===revision&&card.isConnected){content.textContent='Unable to load this Panchanga. ';const retry=document.createElement('button');retry.type='button';retry.textContent='Try again';retry.onclick=()=>openCity(place,card);content.append(retry);}}
 }
 function selectFirst(letter){first=letter;prefix='';selectedId=null;updateURL();drawGroups();}

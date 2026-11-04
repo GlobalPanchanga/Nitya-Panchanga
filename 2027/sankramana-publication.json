@@ -1,0 +1,70 @@
+{
+  "year": 2027,
+  "locations": 2237,
+  "events": 12,
+  "records": 26844,
+  "short_windows": 17,
+  "manifest_sha256": "6c7fc524899c7d8e05377bb9e2410e3dc607624da209d5ab4b1e8c57b076f3bd",
+  "sources": {
+    "meena_sankramana": {
+      "manifest": "festival_review\\sankramana\\meena_sankramana_v3\\convention_update.json",
+      "sha256": "962d8640b7f1d7139528204f4b4247e529d50edf30e7e404870940e55b75aa88",
+      "records": 2237
+    },
+    "mesha_sankramana": {
+      "manifest": "festival_review\\sankramana\\mesha_sankramana\\implementation.json",
+      "sha256": "bca47b4116f824213931b5dcd21d5c296fd6a414c4a5d1e90aa969660169e4fc",
+      "records": 2237
+    },
+    "vrishabha_sankramana": {
+      "manifest": "festival_review\\sankramana\\vrishabha_sankramana\\implementation.json",
+      "sha256": "17b27e079bf29c2e1dd7e6fecb17c48bcf4e25af9e15bfd5e64c00438f6eab79",
+      "records": 2237
+    },
+    "mithuna_sankramana": {
+      "manifest": "festival_review\\sankramana\\mithuna_sankramana\\implementation.json",
+      "sha256": "00a037080654b042cc00c66dbf64c90fac53ee1fc0dee62454e179596dff7626",
+      "records": 2237
+    },
+    "karka_sankramana": {
+      "manifest": "festival_review\\sankramana\\karka_sankramana_v3\\implementation.json",
+      "sha256": "2e06fad022ca6dc1fbe369c814168e675ecfa8216d64aac77dae9eb0d62f21b7",
+      "records": 2237
+    },
+    "simha_sankramana": {
+      "manifest": "festival_review\\sankramana\\simha_sankramana\\implementation.json",
+      "sha256": "2ae22219a4480288899ae4d530e2dc428490cfb2c27b4ba339be12ad3ab972ea",
+      "records": 2237
+    },
+    "kanya_sankramana": {
+      "manifest": "festival_review\\sankramana\\kanya_sankramana\\implementation.json",
+      "sha256": "62c4846411368716a1eba57d2d823a64543799e41ec486798173e56e1ffcbcbc",
+      "records": 2237
+    },
+    "tula_sankramana": {
+      "manifest": "festival_review\\sankramana\\tula_sankramana\\implementation.json",
+      "sha256": "fdeb31084cf093b0401f30df0f50e9d0403d0617deb98af89ba02aef466825b7",
+      "records": 2237
+    },
+    "vrishchika_sankramana": {
+      "manifest": "festival_review\\sankramana\\vrishchika_sankramana\\implementation.json",
+      "sha256": "43eaf2a982c6a246ac4f7a3995b5060e9d4f641475d9523dfe2392fa28ed3386",
+      "records": 2237
+    },
+    "dhanu_sankramana": {
+      "manifest": "festival_review\\sankramana\\dhanu_sankramana\\implementation.json",
+      "sha256": "f88dc84031814d34ee1bfca47ad44b415f1e2291dadd5df64c0e8bb9c98cf408",
+      "records": 2237
+    },
+    "kumbha_sankramana": {
+      "manifest": "festival_review\\sankramana\\kumbha_sankramana\\implementation.json",
+      "sha256": "6509b999a223f277bbf388897f1c6fa03de67beaff824594af233ef8248d6c67",
+      "records": 2237
+    },
+    "makara_sankramana": {
+      "manifest": "festival_review\\sankramana\\makara_sankramana\\implementation.json",
+      "sha256": "79b245a6c519a2ee106f54747a2946c090edd3f12b3be2abc5d068bd431d51b4",
+      "records": 2237
+    }
+  }
+}
