@@ -5,12 +5,13 @@
   "letters": 26,
   "prefix_groups": 218,
   "assets": {
-    "weekly.html": "f235bdd45db38dba420b58b4617a4c498829d98424f74705299742c6dbc24a0f",
+    "weekly.html": "a024fb5aba0d25b85074619663f585af1a6aa9f4405425d6afeadc3ef511f8a2",
     "weekly.css": "0e2e193f7361d67009f0da130fbf594cddd83ed51efa6a2a5f8d6d29675f41a0",
-    "weekly.js": "24a87e38471a8a4954e5a5798027451c1201a5d9cfdb1ae255549d88013e1bd6",
-    "sankramana.js": "c4c0b9d8019064746ffc5d8adc3f666824bde8ab5616b898c63528e1b3198147"
+    "weekly.js": "9185661fae4b2145ffdd9f0a87214f1ea4f3941f6c42d08c6c879a3b22cabda1",
+    "sankramana.js": "c4c0b9d8019064746ffc5d8adc3f666824bde8ab5616b898c63528e1b3198147",
+    "festival-display.js": "2c1d8d0eabc43f5b730eda2a71e9f45c57988d55520fc0eba021d5bbbbd30a8f"
   },
-  "existing_search_page_sha256": "e482d7fd71c20614882920cee02bb8ae371d8cb506ecfc68d97dc976fe4b1f7c",
+  "existing_search_page_sha256": "4c0b4b8ab918a9c6f2a7ce62cee4f5645a9f300586896396bafd6d00dfbe97d9",
   "shared_astronomy_manifest_sha256": "578fd553dc641af8777de4278a333c6833c30b55994df32a1411a6c5abf6dec4",
   "shared_ekadashi_manifest_sha256": "6e5d514f50e8aceb9bcae75534f57b7137545008031db152b80996539a6ddf8b",
   "shared_sankramana_manifest_sha256": "6c7fc524899c7d8e05377bb9e2410e3dc607624da209d5ab4b1e8c57b076f3bd"
