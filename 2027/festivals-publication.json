@@ -1,15 +1,28 @@
 {
   "year": 2027,
-  "events": 1,
+  "events": 2,
   "locations": 2237,
-  "records": 2237,
-  "festival": "Chaandramaana Ugadi",
-  "dates": {
-    "2027-04-07": 2117,
-    "2027-04-08": 120
+  "records": 4474,
+  "festivals": [
+    "Chaandramaana Ugadi",
+    "Rama Navami"
+  ],
+  "rama_navami_dates": {
+    "2027-04-14": 852,
+    "2027-04-15": 1385
   },
   "presentation": "CACHE_SAFE_SHARED_HEADINGS_V4",
-  "manifest_sha256": "05b787a3245ebe55f7b20a62f76fb35af1c548f75bd6768a9d26838bdd7d2296",
-  "source_sha256": "cc1430066637a08c6efdc1fe131c82982054298b70f485c5e6a703e029a26798",
-  "display_name": "Chaandramaana Ugadi"
+  "manifest_sha256": "7adfc6f5f4bcceb5b7d549a3cae9779582103d09586e944d94d3a7db3c36b243",
+  "sources": [
+    {
+      "event": "chaandramaana_ugadi",
+      "manifest": "festival_review\\chaitra\\chaandramaana_ugadi\\implementation.json",
+      "sha256": "cc1430066637a08c6efdc1fe131c82982054298b70f485c5e6a703e029a26798"
+    },
+    {
+      "event": "rama_navami",
+      "manifest": "festival_review\\chaitra\\rama_navami\\vaishnava_2027\\implementation.json",
+      "sha256": "08234b48c98c658da683075a9d06cb35472b188a88ee150fb196fe87479b9e98"
+    }
+  ]
 }
