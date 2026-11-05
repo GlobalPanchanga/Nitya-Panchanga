@@ -13,7 +13,7 @@ function renderFestivals(rows,weekly=false){
   const heading=document.createElement(weekly?'h3':'h2');heading.textContent='Festivals';section.append(heading);
   for(const [name,message,details,role] of rows){
     const card=document.createElement('article');card.className=weekly?'festival-event event':'festival-event';card.dataset.role=role;
-    const title=document.createElement(weekly?'h4':'h3');title.textContent=name;card.append(title);
+    const title=document.createElement(weekly?'h4':'h3');title.textContent=name==='Ugadi'?'Chaandramaana Ugadi':name;card.append(title);
     if(message){const p=document.createElement('p');p.className='event-message';p.textContent=message;card.append(p);}
     if(details){const p=document.createElement('p');p.className='event-details';p.textContent=details;card.append(p);}
     section.append(card);
@@ -32,5 +32,6 @@ function ekadashiGuidance(message,role){
 }
 function renderFestivalDay(container,panchanga,festivals,dateLabel=null){
   // All present and future festival sections belong in this list before Panchanga.
-  container.replaceChildren(...(dateLabel?[dateLabel]:[]),...festivals.filter(Boolean),panchanga);
+  const heading=document.createElement(container.classList.contains('city-content')?'h3':'h2');heading.className='panchanga-heading';heading.textContent='Panchanga';
+  container.replaceChildren(...(dateLabel?[dateLabel]:[]),...festivals.filter(Boolean),heading,panchanga);
 }
