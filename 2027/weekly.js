@@ -27,9 +27,9 @@ async function cityPayload(place,kind){const cache=kind==='base'?baseCache:event
  const payload=await jsonAsset((kind==='base'?'year2027/':'events2027/')+file);if(payload.place_id!==place.place_id)throw Error('City identity mismatch');
  if(cache.size>=5)cache.delete(cache.keys().next().value);cache.set(place.place_id,payload);return payload;
 }
-function renderData(row,events,content,sankramanas=[]){const dl=document.createElement('dl');
+function renderData(row,events,content,sankramanas=[],festivalRows=[]){const dl=document.createElement('dl');
  for(const key of ['Samvatsara','Ayana','Ritu','Amanta Maasa','Paksha','Tithi','Vaara','Nakshatra','Yoga','Karana','Sooryodaya']){const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=key;dd.textContent=row[key]||'—';dl.append(dt,dd);}
- const festivals=[];if(events.length){
+ const festivals=festivalRows.length?[renderFestivals(festivalRows,true)]:[];if(events.length){
  const block=document.createElement('section');block.className='events';const h=document.createElement('h3');h.textContent='Ekadashi';block.append(h);
  for(const [name,message,details,role] of events){const card=document.createElement('article');card.className='event';card.dataset.role=role;const title=document.createElement('h4'),action=document.createElement('p'),time=document.createElement('p');title.textContent=name;action.className='event-message';action.textContent=ekadashiGuidance(message,role);time.className='event-details';time.textContent=details;card.append(title,action,time);block.append(card);}
  festivals.push(block);}
@@ -39,10 +39,10 @@ function renderData(row,events,content,sankramanas=[]){const dl=document.createE
 async function openCity(place,card){const day=selectedDay,version=revision;selectedId=place.place_id;remember(selectedId);updateURL();
  document.querySelectorAll('.city-card[open]').forEach(other=>{if(other!==card)other.open=false;});
  const content=card.querySelector('.city-content');if(content.dataset.loaded===day)return;content.textContent='Loading Panchanga…';
- try{const [base,event,sankramanas]=await Promise.all([cityPayload(place,'base'),cityPayload(place,'events'),loadSankramanaRows(place,day)]);
+ try{const [base,event,sankramanas,festivalRows]=await Promise.all([cityPayload(place,'base'),cityPayload(place,'events'),loadSankramanaRows(place,day),loadFestivalRows(place,day)]);
   if(version!==revision||day!==selectedDay||!card.isConnected)return;
   const values=base.days[day];if(!values)throw Error('Date missing from city data');
-  const row=Object.fromEntries(base.fields.map((field,i)=>[field,values[i]]));renderData(row,event.days[day]||[],content,sankramanas);content.dataset.loaded=day;
+  const row=Object.fromEntries(base.fields.map((field,i)=>[field,values[i]]));renderData(row,event.days[day]||[],content,sankramanas,festivalRows);content.dataset.loaded=day;
  }catch(error){if(version===revision&&card.isConnected){content.textContent='Unable to load this Panchanga. ';const retry=document.createElement('button');retry.type='button';retry.textContent='Try again';retry.onclick=()=>openCity(place,card);content.append(retry);}}
 }
 function selectFirst(letter){first=letter;prefix='';selectedId=null;updateURL();drawGroups();}
