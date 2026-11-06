@@ -1,18 +1,19 @@
 {
   "year": 2027,
-  "events": 2,
+  "events": 3,
   "locations": 2237,
-  "records": 4474,
+  "records": 6711,
   "festivals": [
     "Chaandramaana Ugadi",
-    "Rama Navami"
+    "Rama Navami",
+    "Hanuman Jayanti"
   ],
   "rama_navami_dates": {
     "2027-04-14": 852,
     "2027-04-15": 1385
   },
   "presentation": "CACHE_SAFE_SHARED_HEADINGS_V4",
-  "manifest_sha256": "7adfc6f5f4bcceb5b7d549a3cae9779582103d09586e944d94d3a7db3c36b243",
+  "manifest_sha256": "cf5b1dc67511475debb5ac8cf6bbe17a706dedca913eeaca7085667043cbdf6c",
   "sources": [
     {
       "event": "chaandramaana_ugadi",
@@ -23,6 +24,15 @@
       "event": "rama_navami",
       "manifest": "festival_review\\chaitra\\rama_navami\\vaishnava_2027\\implementation.json",
       "sha256": "08234b48c98c658da683075a9d06cb35472b188a88ee150fb196fe87479b9e98"
+    },
+    {
+      "event": "hanuman_jayanti",
+      "manifest": "festival_review\\chaitra\\hanuman_jayanti\\implementation.json",
+      "sha256": "e8a8dd03743e9f9b0ce157bf99a23dcd37facd55b7c160c98490824f7697d4cd"
     }
-  ]
+  ],
+  "hanuman_jayanti_dates": {
+    "2027-04-20": 2130,
+    "2027-04-21": 107
+  }
 }
