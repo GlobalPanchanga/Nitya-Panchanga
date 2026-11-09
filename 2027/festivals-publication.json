@@ -10,21 +10,16 @@
     "Parashurama Jayanti"
   ],
   "rama_navami_dates": {
-    "2027-04-14": 852,
-    "2027-04-15": 1385
+    "2027-04-14": 1139,
+    "2027-04-15": 1098
   },
   "presentation": "CACHE_SAFE_SHARED_HEADINGS_V4",
-  "manifest_sha256": "f5ca74a2814701636783220b42d4fa641ac324160f6bd648d7db9d06220f6dd2",
+  "manifest_sha256": "3ffc28d6d423e25251d7b883cbc8dad215dedf606707501b10d7f326b9a6b3b6",
   "sources": [
     {
       "event": "chaandramaana_ugadi",
       "manifest": "festival_review\\chaitra\\chaandramaana_ugadi\\implementation.json",
       "sha256": "cc1430066637a08c6efdc1fe131c82982054298b70f485c5e6a703e029a26798"
-    },
-    {
-      "event": "rama_navami",
-      "manifest": "festival_review\\chaitra\\rama_navami\\vaishnava_2027\\implementation.json",
-      "sha256": "08234b48c98c658da683075a9d06cb35472b188a88ee150fb196fe87479b9e98"
     },
     {
       "event": "hanuman_jayanti",
@@ -35,6 +30,11 @@
       "event": "parashurama_jayanti",
       "manifest": "festival_review\\vaishakha\\parashurama_jayanti\\implementation.json",
       "sha256": "5db8f69824196fb5684668ff88731491b059080cfd5dad82e8935695c2416e76"
+    },
+    {
+      "event": "rama_navami",
+      "manifest": "festival_review\\chaitra\\rama_navami\\madhyahna_v2_2027\\implementation.json",
+      "sha256": "610a6cc3d9e5eaf759047b84577ad3997a4af91ece967cbb1c8185347aa7c150"
     }
   ],
   "hanuman_jayanti_dates": {
