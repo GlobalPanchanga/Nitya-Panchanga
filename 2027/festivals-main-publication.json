@@ -1,0 +1,37 @@
+{
+  "year": 2027,
+  "view": "MAIN",
+  "events": 4,
+  "locations": 2237,
+  "records": 8948,
+  "updated_event": "parashurama_jayanti",
+  "rule_version": "PARASHURAMA_V5_FIRST_PRAHARA_REVERSE_DAYLIGHT",
+  "dates": {
+    "2027-05-07": 2,
+    "2027-05-08": 2235
+  },
+  "sources": [
+    {
+      "event": "chaandramaana_ugadi",
+      "manifest": "festival_review\\chaitra\\chaandramaana_ugadi\\implementation.json",
+      "sha256": "cc1430066637a08c6efdc1fe131c82982054298b70f485c5e6a703e029a26798"
+    },
+    {
+      "event": "hanuman_jayanti",
+      "manifest": "festival_review\\chaitra\\hanuman_jayanti\\implementation.json",
+      "sha256": "e8a8dd03743e9f9b0ce157bf99a23dcd37facd55b7c160c98490824f7697d4cd"
+    },
+    {
+      "event": "rama_navami",
+      "manifest": "festival_review\\chaitra\\rama_navami\\madhyahna_v2_2027\\implementation.json",
+      "sha256": "610a6cc3d9e5eaf759047b84577ad3997a4af91ece967cbb1c8185347aa7c150"
+    },
+    {
+      "event": "parashurama_jayanti",
+      "manifest": "festival_review\\vaishakha\\parashurama_jayanti\\daylight_v5_2027\\implementation.json",
+      "sha256": "ee3d9ac55bc9fa1201dfda221027cecc98462d161716e775c0dbb4ae1b6df7e2"
+    }
+  ],
+  "manifest_sha256": "b7b1f604dc91212b6e110e3a8568e0028748956b5c947eac4cf00f75d2844b7c",
+  "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
+}
