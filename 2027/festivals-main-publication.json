@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 4,
+  "events": 5,
   "locations": 2237,
-  "records": 8948,
-  "updated_event": "parashurama_jayanti",
-  "rule_version": "PARASHURAMA_V5_FIRST_PRAHARA_REVERSE_DAYLIGHT",
+  "records": 11185,
+  "updated_event": "akshaya_tritiya",
+  "rule_version": "AKSHAYA_TRITIYA_V4_COMBINED_MORNING_FORWARD_DAYLIGHT",
   "dates": {
-    "2027-05-07": 2,
-    "2027-05-08": 2235
+    "2027-05-08": 1054,
+    "2027-05-09": 1183
   },
   "sources": [
     {
@@ -30,8 +30,13 @@
       "event": "parashurama_jayanti",
       "manifest": "festival_review\\vaishakha\\parashurama_jayanti\\daylight_v5_2027\\implementation.json",
       "sha256": "ee3d9ac55bc9fa1201dfda221027cecc98462d161716e775c0dbb4ae1b6df7e2"
+    },
+    {
+      "event": "akshaya_tritiya",
+      "manifest": "festival_review\\vaishakha\\akshaya_tritiya\\combined_morning_2027\\implementation.json",
+      "sha256": "05d5652329281eaeefa127d8dd86fc0814bd9538ab565b5b9874fe0ab37e4fc3"
     }
   ],
-  "manifest_sha256": "b7b1f604dc91212b6e110e3a8568e0028748956b5c947eac4cf00f75d2844b7c",
+  "manifest_sha256": "7439c8f77e2c76bada65c6d8959b4a296b2fb9aa07df071741bc7252d4a2eb6b",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
