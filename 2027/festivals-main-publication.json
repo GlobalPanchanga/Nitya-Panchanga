@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 5,
+  "events": 6,
   "locations": 2237,
-  "records": 11185,
-  "updated_event": "akshaya_tritiya",
-  "rule_version": "AKSHAYA_TRITIYA_V4_COMBINED_MORNING_FORWARD_DAYLIGHT",
+  "records": 13422,
+  "updated_event": "ganga_saptami",
+  "rule_version": "GANGA_SAPTAMI_V2_MADHYAHNA_FIRST_DAY",
   "dates": {
-    "2027-05-08": 1054,
-    "2027-05-09": 1183
+    "2027-05-11": 305,
+    "2027-05-12": 1932
   },
   "sources": [
     {
@@ -35,8 +35,13 @@
       "event": "akshaya_tritiya",
       "manifest": "festival_review\\vaishakha\\akshaya_tritiya\\combined_morning_2027\\implementation.json",
       "sha256": "05d5652329281eaeefa127d8dd86fc0814bd9538ab565b5b9874fe0ab37e4fc3"
+    },
+    {
+      "event": "ganga_saptami",
+      "manifest": "festival_review\\vaishakha\\ganga_saptami\\madhyahna_first_2027\\implementation.json",
+      "sha256": "61c828d88a018b020c3cfac571ad3a23af1e873812184a3745459d3d1c5be415"
     }
   ],
-  "manifest_sha256": "7439c8f77e2c76bada65c6d8959b4a296b2fb9aa07df071741bc7252d4a2eb6b",
+  "manifest_sha256": "14c237c65482bba92e9fca6f993ca93e3a42e4237ccc4e15a0fcb408ed40d9b1",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
