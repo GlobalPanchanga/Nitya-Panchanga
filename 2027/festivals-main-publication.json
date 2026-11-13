@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 13,
+  "events": 14,
   "locations": 2237,
-  "records": 29081,
-  "updated_event": "kurma_jayanti",
-  "rule_version": "KURMA_JAYANTI_V4_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 31318,
+  "updated_event": "nag_panchami",
+  "rule_version": "NAG_PANCHAMI_V4_SECOND_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-05-20": 1726,
-    "2027-05-19": 511
+    "2027-08-06": 2236,
+    "2027-08-07": 1
   },
   "sources": [
     {
@@ -75,8 +75,13 @@
       "event": "kurma_jayanti",
       "manifest": "festival_review\\vaishakha\\kurma_jayanti\\udaya_vyapini_2027\\implementation.json",
       "sha256": "330b9fbc820f5e53186b0d2fda0395a0a42decab8d4a29dcfef73641ce58fc58"
+    },
+    {
+      "event": "nag_panchami",
+      "manifest": "festival_review\\shravana\\nag_panchami\\implementation.json",
+      "sha256": "215471db316453fd4cdc788665390bea513250900fa757dd84efc057aca57209"
     }
   ],
-  "manifest_sha256": "c35501209ac9de8bdc07b081f6c1a6215c4cfb6515fb7042b586527827b054ec",
+  "manifest_sha256": "53da0d80ba03bebc2d95f4a70baca8c04d9141d2b9493cc060c75a274d18a2b4",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
