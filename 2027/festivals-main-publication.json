@@ -1,10 +1,15 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 6,
+  "events": 7,
   "locations": 2237,
-  "records": 13422,
-  "updated_event": "ganga_saptami",
+  "records": 15659,
+  "updated_event": "buddha_purnima",
+  "rule_version": "BUDDHA_PURNIMA_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "dates": {
+    "2027-05-20": 1726,
+    "2027-05-19": 511
+  },
   "sources": [
     {
       "event": "chaandramaana_ugadi",
@@ -35,14 +40,13 @@
       "event": "ganga_saptami",
       "manifest": "festival_review\\vaishakha\\ganga_saptami\\madhyahna_first_2027\\implementation.json",
       "sha256": "61c828d88a018b020c3cfac571ad3a23af1e873812184a3745459d3d1c5be415"
+    },
+    {
+      "event": "buddha_purnima",
+      "manifest": "festival_review\\vaishakha\\buddha_purnima\\implementation.json",
+      "sha256": "137b8918d435a0404338bdceb11f9c3d87362dc2ed0b672521c68bdc6a83935c"
     }
   ],
-  "manifest_sha256": "fc0725cc7b98aa41cce9cfab8c2d170a6ba0ea7e1b679d3dad0d869ebbb0b518",
-  "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9",
-  "removed_events": [
-    "sita_navami"
-  ],
-  "display_names": {
-    "ganga_saptami": "Ganga Saptami (Ganga Utpatthi)"
-  }
+  "manifest_sha256": "9211bc9380f457d2ef263bc740588e9b195d3937d08cc474e029b75e01b0ac3c",
+  "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
