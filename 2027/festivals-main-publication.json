@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 9,
+  "events": 10,
   "locations": 2237,
-  "records": 20133,
-  "updated_event": "narada_jayanti",
-  "rule_version": "NARADA_JAYANTI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 22370,
+  "updated_event": "shani_jayanti",
+  "rule_version": "SHANI_JAYANTI_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-05-21": 1832,
-    "2027-05-20": 405
+    "2027-06-04": 2214,
+    "2027-06-05": 23
   },
   "sources": [
     {
@@ -55,8 +55,13 @@
       "event": "narada_jayanti",
       "manifest": "festival_review\\vaishakha\\narada_jayanti\\implementation.json",
       "sha256": "5b7abda74240f0d1b236524b4b625c783a694be475e429e25392670f6aac28d6"
+    },
+    {
+      "event": "shani_jayanti",
+      "manifest": "festival_review\\vaishakha\\shani_jayanti\\implementation.json",
+      "sha256": "58dbf0f236f925d97d77165b7250fa24120cf44189f5c47b42762ad29bfd7a09"
     }
   ],
-  "manifest_sha256": "c6ed75e568dd422fd157f4ff87a107a7e06974f4c36859a557d6efa5274a9eed",
+  "manifest_sha256": "b06275ffbda5a6f005f0a4cf844e5f02a97075862f76e954792f640f264e349c",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
