@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 12,
+  "events": 13,
   "locations": 2237,
-  "records": 26844,
-  "updated_event": "guru_purnima",
-  "rule_version": "GURU_PURNIMA_V3_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 29081,
+  "updated_event": "narasimha_jayanti",
+  "rule_version": "NARASIMHA_V2_LOCAL_NIGHT_PRADOSHA",
   "dates": {
-    "2027-07-18": 2236,
-    "2027-07-17": 1
+    "2027-05-18": 2199,
+    "2027-05-19": 38
   },
   "sources": [
     {
@@ -70,8 +70,13 @@
       "event": "guru_purnima",
       "manifest": "festival_review\\ashadha\\guru_purnima\\implementation.json",
       "sha256": "6406dca5f06b1f0f1288a3005f5d32e0e64290d38541189d68a95079d588c4c0"
+    },
+    {
+      "event": "narasimha_jayanti",
+      "manifest": "festival_review\\vaishakha\\narasimha_jayanti\\implementation.json",
+      "sha256": "bc282987b7b1416d3e94d9e5151f0e432b944d5089973b37859124e75eabdca6"
     }
   ],
-  "manifest_sha256": "17879c38c22e52045789081f595b098ce42c28f5c75ea68e45c668bf23264fe6",
+  "manifest_sha256": "a02a29b1e57c8c8dff86be5b1b95d8c87218eb90e3819c343495f66874679380",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
