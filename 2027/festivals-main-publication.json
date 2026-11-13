@@ -4,11 +4,11 @@
   "events": 13,
   "locations": 2237,
   "records": 29081,
-  "updated_event": "narasimha_jayanti",
-  "rule_version": "NARASIMHA_V2_LOCAL_NIGHT_PRADOSHA",
+  "updated_event": "kurma_jayanti",
+  "rule_version": "KURMA_JAYANTI_V4_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-05-18": 2199,
-    "2027-05-19": 38
+    "2027-05-20": 1726,
+    "2027-05-19": 511
   },
   "sources": [
     {
@@ -47,11 +47,6 @@
       "sha256": "137b8918d435a0404338bdceb11f9c3d87362dc2ed0b672521c68bdc6a83935c"
     },
     {
-      "event": "kurma_jayanti",
-      "manifest": "festival_review\\vaishakha\\kurma_jayanti\\implementation.json",
-      "sha256": "c5e031d640692e0516bc79d518ce19ef2c53927aebfb497a530a9d311dc1fe1d"
-    },
-    {
       "event": "narada_jayanti",
       "manifest": "festival_review\\vaishakha\\narada_jayanti\\implementation.json",
       "sha256": "5b7abda74240f0d1b236524b4b625c783a694be475e429e25392670f6aac28d6"
@@ -75,8 +70,13 @@
       "event": "narasimha_jayanti",
       "manifest": "festival_review\\vaishakha\\narasimha_jayanti\\implementation.json",
       "sha256": "bc282987b7b1416d3e94d9e5151f0e432b944d5089973b37859124e75eabdca6"
+    },
+    {
+      "event": "kurma_jayanti",
+      "manifest": "festival_review\\vaishakha\\kurma_jayanti\\udaya_vyapini_2027\\implementation.json",
+      "sha256": "330b9fbc820f5e53186b0d2fda0395a0a42decab8d4a29dcfef73641ce58fc58"
     }
   ],
-  "manifest_sha256": "a02a29b1e57c8c8dff86be5b1b95d8c87218eb90e3819c343495f66874679380",
+  "manifest_sha256": "c35501209ac9de8bdc07b081f6c1a6215c4cfb6515fb7042b586527827b054ec",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
