@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 7,
+  "events": 8,
   "locations": 2237,
-  "records": 15659,
-  "updated_event": "buddha_purnima",
-  "rule_version": "BUDDHA_PURNIMA_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 17896,
+  "updated_event": "kurma_jayanti",
+  "rule_version": "KURMA_JAYANTI_V3_REVERSE_DAYLIGHT",
   "dates": {
-    "2027-05-20": 1726,
-    "2027-05-19": 511
+    "2027-05-19": 1340,
+    "2027-05-20": 897
   },
   "sources": [
     {
@@ -45,8 +45,13 @@
       "event": "buddha_purnima",
       "manifest": "festival_review\\vaishakha\\buddha_purnima\\implementation.json",
       "sha256": "137b8918d435a0404338bdceb11f9c3d87362dc2ed0b672521c68bdc6a83935c"
+    },
+    {
+      "event": "kurma_jayanti",
+      "manifest": "festival_review\\vaishakha\\kurma_jayanti\\implementation.json",
+      "sha256": "c5e031d640692e0516bc79d518ce19ef2c53927aebfb497a530a9d311dc1fe1d"
     }
   ],
-  "manifest_sha256": "9211bc9380f457d2ef263bc740588e9b195d3937d08cc474e029b75e01b0ac3c",
+  "manifest_sha256": "6e6b834d907cbb84ec69f7787f924e6ef26ee3ce6d981587fed91efb402b4c5e",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
