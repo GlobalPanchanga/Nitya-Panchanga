@@ -1,15 +1,10 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 7,
+  "events": 6,
   "locations": 2237,
-  "records": 15659,
-  "updated_event": "sita_navami",
-  "rule_version": "SITA_NAVAMI_V2_MADHYAHNA_SANGAVA_PRATAH",
-  "dates": {
-    "2027-05-13": 848,
-    "2027-05-14": 1389
-  },
+  "records": 13422,
+  "updated_event": "ganga_saptami",
   "sources": [
     {
       "event": "chaandramaana_ugadi",
@@ -40,13 +35,14 @@
       "event": "ganga_saptami",
       "manifest": "festival_review\\vaishakha\\ganga_saptami\\madhyahna_first_2027\\implementation.json",
       "sha256": "61c828d88a018b020c3cfac571ad3a23af1e873812184a3745459d3d1c5be415"
-    },
-    {
-      "event": "sita_navami",
-      "manifest": "festival_review\\vaishakha\\sita_navami\\madhyahna_2027\\implementation.json",
-      "sha256": "4bf9acb2267b93780a40bce3e22d140ef15cad52f50d9073e8622e5d0307d700"
     }
   ],
-  "manifest_sha256": "cce6730a530a440b10fe90233d86e2d3f73fca5a3f79431e5fe1701230cbd2be",
-  "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
+  "manifest_sha256": "fc0725cc7b98aa41cce9cfab8c2d170a6ba0ea7e1b679d3dad0d869ebbb0b518",
+  "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9",
+  "removed_events": [
+    "sita_navami"
+  ],
+  "display_names": {
+    "ganga_saptami": "Ganga Saptami (Ganga Utpatthi)"
+  }
 }
