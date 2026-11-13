@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 8,
+  "events": 9,
   "locations": 2237,
-  "records": 17896,
-  "updated_event": "kurma_jayanti",
-  "rule_version": "KURMA_JAYANTI_V3_REVERSE_DAYLIGHT",
+  "records": 20133,
+  "updated_event": "narada_jayanti",
+  "rule_version": "NARADA_JAYANTI_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-05-19": 1340,
-    "2027-05-20": 897
+    "2027-05-21": 1832,
+    "2027-05-20": 405
   },
   "sources": [
     {
@@ -50,8 +50,13 @@
       "event": "kurma_jayanti",
       "manifest": "festival_review\\vaishakha\\kurma_jayanti\\implementation.json",
       "sha256": "c5e031d640692e0516bc79d518ce19ef2c53927aebfb497a530a9d311dc1fe1d"
+    },
+    {
+      "event": "narada_jayanti",
+      "manifest": "festival_review\\vaishakha\\narada_jayanti\\implementation.json",
+      "sha256": "5b7abda74240f0d1b236524b4b625c783a694be475e429e25392670f6aac28d6"
     }
   ],
-  "manifest_sha256": "6e6b834d907cbb84ec69f7787f924e6ef26ee3ce6d981587fed91efb402b4c5e",
+  "manifest_sha256": "c6ed75e568dd422fd157f4ff87a107a7e06974f4c36859a557d6efa5274a9eed",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
