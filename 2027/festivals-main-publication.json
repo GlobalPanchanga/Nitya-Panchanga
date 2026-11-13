@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 11,
+  "events": 12,
   "locations": 2237,
-  "records": 24607,
-  "updated_event": "ganga_dussehra",
-  "rule_version": "BHAGIRATHI_JAYANTHI_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 26844,
+  "updated_event": "guru_purnima",
+  "rule_version": "GURU_PURNIMA_V3_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-06-13": 2184,
-    "2027-06-14": 53
+    "2027-07-18": 2236,
+    "2027-07-17": 1
   },
   "sources": [
     {
@@ -65,8 +65,13 @@
       "event": "ganga_dussehra",
       "manifest": "festival_review\\jyeshtha\\ganga_dussehra\\implementation.json",
       "sha256": "c44f8b75bec647694ab41231f51bae5451bd8b949097120b2a2cf8e6a513ee74"
+    },
+    {
+      "event": "guru_purnima",
+      "manifest": "festival_review\\ashadha\\guru_purnima\\implementation.json",
+      "sha256": "6406dca5f06b1f0f1288a3005f5d32e0e64290d38541189d68a95079d588c4c0"
     }
   ],
-  "manifest_sha256": "5e9f1d48cb1ba4b536af73e043aa7a1be3ca05c5b988931253214e80464a3148",
+  "manifest_sha256": "17879c38c22e52045789081f595b098ce42c28f5c75ea68e45c668bf23264fe6",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
