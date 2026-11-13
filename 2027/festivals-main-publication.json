@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 10,
+  "events": 11,
   "locations": 2237,
-  "records": 22370,
-  "updated_event": "shani_jayanti",
-  "rule_version": "SHANI_JAYANTI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 24607,
+  "updated_event": "ganga_dussehra",
+  "rule_version": "BHAGIRATHI_JAYANTHI_V1_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-06-04": 2214,
-    "2027-06-05": 23
+    "2027-06-13": 2184,
+    "2027-06-14": 53
   },
   "sources": [
     {
@@ -60,8 +60,13 @@
       "event": "shani_jayanti",
       "manifest": "festival_review\\vaishakha\\shani_jayanti\\implementation.json",
       "sha256": "58dbf0f236f925d97d77165b7250fa24120cf44189f5c47b42762ad29bfd7a09"
+    },
+    {
+      "event": "ganga_dussehra",
+      "manifest": "festival_review\\jyeshtha\\ganga_dussehra\\implementation.json",
+      "sha256": "c44f8b75bec647694ab41231f51bae5451bd8b949097120b2a2cf8e6a513ee74"
     }
   ],
-  "manifest_sha256": "b06275ffbda5a6f005f0a4cf844e5f02a97075862f76e954792f640f264e349c",
+  "manifest_sha256": "5e9f1d48cb1ba4b536af73e043aa7a1be3ca05c5b988931253214e80464a3148",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
