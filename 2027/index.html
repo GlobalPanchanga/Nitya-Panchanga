@@ -93,7 +93,10 @@ function renderEkadashis(rows){
   for(const [name,message,details,role] of rows){
     const card=document.createElement('article');card.className='ekadashi-event';card.dataset.role=role;
     const devshayaniBegins=name==='Devshayani Ekadashi'&&role==='UPAVASA_DAY_1';
-    const h=document.createElement('h3');h.textContent=devshayaniBegins?name+' (Taptha Mudra Dharana)':name;
+    const dadhiBegins=name==='Shravana Putrada Ekadashi'&&role==='UPAVASA_DAY_1';
+    const h=document.createElement('h3');h.textContent=name;
+    if(devshayaniBegins)h.textContent+=' (Taptha Mudra Dharana)';
+    if(dadhiBegins)h.textContent+=' (Dadhi Vrata Begins)';
     const guidance=document.createElement('p');guidance.className='event-message';guidance.textContent=ekadashiGuidance(message,role);
     const timing=document.createElement('p');timing.className='event-details';timing.textContent=details;
     card.append(h,guidance,timing);section.append(card);
