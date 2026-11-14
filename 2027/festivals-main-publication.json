@@ -1,14 +1,13 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 14,
+  "events": 15,
   "locations": 2237,
-  "records": 31318,
-  "updated_event": "nag_panchami",
-  "rule_version": "NAG_PANCHAMI_V4_SECOND_SUNRISE_OR_CIVIL_START",
+  "records": 33555,
+  "updated_event": "kalki_jayanti",
+  "rule_version": "KALKI_JAYANTI_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-08-06": 2236,
-    "2027-08-07": 1
+    "2027-08-07": 2237
   },
   "sources": [
     {
@@ -80,8 +79,13 @@
       "event": "nag_panchami",
       "manifest": "festival_review\\shravana\\nag_panchami\\implementation.json",
       "sha256": "215471db316453fd4cdc788665390bea513250900fa757dd84efc057aca57209"
+    },
+    {
+      "event": "kalki_jayanti",
+      "manifest": "festival_review\\shravana\\kalki_jayanti\\implementation.json",
+      "sha256": "1004ed6493a722af4a4150636ba7f5bf1540477b0087f9883db7b653e8e14e2e"
     }
   ],
-  "manifest_sha256": "53da0d80ba03bebc2d95f4a70baca8c04d9141d2b9493cc060c75a274d18a2b4",
+  "manifest_sha256": "2a364d3e06b5ae5f4c6c1dac8d9549631ad7dd11fd8c2297ee4bb6169c385d80",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
