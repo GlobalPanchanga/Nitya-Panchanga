@@ -1,13 +1,13 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 15,
+  "events": 16,
   "locations": 2237,
-  "records": 33555,
-  "updated_event": "kalki_jayanti",
-  "rule_version": "KALKI_JAYANTI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 35792,
+  "updated_event": "varalakshmi_vrat",
+  "rule_version": "VARALAKSHMI_V1_NON_ADHIKA_LAST_FRIDAY",
   "dates": {
-    "2027-08-07": 2237
+    "2027-08-13": 2237
   },
   "sources": [
     {
@@ -84,8 +84,13 @@
       "event": "kalki_jayanti",
       "manifest": "festival_review\\shravana\\kalki_jayanti\\implementation.json",
       "sha256": "1004ed6493a722af4a4150636ba7f5bf1540477b0087f9883db7b653e8e14e2e"
+    },
+    {
+      "event": "varalakshmi_vrat",
+      "manifest": "festival_review\\shravana\\varalakshmi_vrat\\implementation.json",
+      "sha256": "e6c4de6013c6c729ddfb375f99ac310dd4fbb0fb1dae4718c48c0eeb3f3b7d16"
     }
   ],
-  "manifest_sha256": "2a364d3e06b5ae5f4c6c1dac8d9549631ad7dd11fd8c2297ee4bb6169c385d80",
+  "manifest_sha256": "c80a8422338cd56374120de07afffca1be897b00a4b3f344c9368c5557abbe80",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
