@@ -1,13 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 16,
+  "events": 17,
   "locations": 2237,
-  "records": 35792,
-  "updated_event": "varalakshmi_vrat",
-  "rule_version": "VARALAKSHMI_V1_NON_ADHIKA_LAST_FRIDAY",
+  "records": 38029,
+  "updated_event": "krishna_janmashtami",
+  "rule_version": "INDEPENDENT_KRISHNA_JAYANTHI_V1_2_PUBLIC_NOTE_BLANK",
   "dates": {
-    "2027-08-13": 2237
+    "2027-08-25": 1944,
+    "2027-08-24": 293
   },
   "sources": [
     {
@@ -89,8 +90,13 @@
       "event": "varalakshmi_vrat",
       "manifest": "festival_review\\shravana\\varalakshmi_vrat\\implementation.json",
       "sha256": "e6c4de6013c6c729ddfb375f99ac310dd4fbb0fb1dae4718c48c0eeb3f3b7d16"
+    },
+    {
+      "event": "krishna_janmashtami",
+      "manifest": "festival_review\\shravana\\krishna_janmashtami\\implementation.json",
+      "sha256": "fe9e7f699fc34cee5b9cb4edcd408bb628f2dbf3178bd0dc83a651036e59ae3b"
     }
   ],
-  "manifest_sha256": "c80a8422338cd56374120de07afffca1be897b00a4b3f344c9368c5557abbe80",
+  "manifest_sha256": "777988112f61097e50bb94b919659d077d2dca759ce6a5d9ae71d142c4d8dbf6",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
