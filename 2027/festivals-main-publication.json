@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 17,
+  "events": 18,
   "locations": 2237,
-  "records": 38029,
-  "updated_event": "krishna_janmashtami",
-  "rule_version": "INDEPENDENT_KRISHNA_JAYANTHI_V1_2_PUBLIC_NOTE_BLANK",
+  "records": 40266,
+  "updated_event": "varaha_jayanti",
+  "rule_version": "VARAHA_JAYANTI_V3_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-08-25": 1944,
-    "2027-08-24": 293
+    "2027-09-03": 1385,
+    "2027-09-02": 852
   },
   "sources": [
     {
@@ -95,8 +95,13 @@
       "event": "krishna_janmashtami",
       "manifest": "festival_review\\shravana\\krishna_janmashtami\\implementation.json",
       "sha256": "fe9e7f699fc34cee5b9cb4edcd408bb628f2dbf3178bd0dc83a651036e59ae3b"
+    },
+    {
+      "event": "varaha_jayanti",
+      "manifest": "festival_review\\bhadrapada\\varaha_jayanti\\implementation.json",
+      "sha256": "703d43fc90b9cfb4dc5182cacad9af86a3bde340c0b656d6e301c5b90d46308b"
     }
   ],
-  "manifest_sha256": "777988112f61097e50bb94b919659d077d2dca759ce6a5d9ae71d142c4d8dbf6",
+  "manifest_sha256": "8cefe2d53db10d3f24ec62c54a1bf88ed35b18bbf727dfad81d8bd7e2e37a093",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
