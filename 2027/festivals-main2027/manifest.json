@@ -2336,14 +2336,14 @@
       "sha256": "703d43fc90b9cfb4dc5182cacad9af86a3bde340c0b656d6e301c5b90d46308b"
     },
     {
-      "event": "ganesh_chaturthi",
-      "manifest": "festival_review\\bhadrapada\\ganesh_chaturthi\\implementation.json",
-      "sha256": "26fbf1419930adf8703412b937f2eb36199f089d61692b3e65c9be25b1b6b95f"
-    },
-    {
       "event": "rishi_panchami",
       "manifest": "festival_review\\bhadrapada\\rishi_panchami\\implementation.json",
       "sha256": "8dfe9d3f90e5a4d4fe0e4831e13ee41d82ee9a31c95ab97d98052e3441396ca6"
+    },
+    {
+      "event": "ganesh_chaturthi",
+      "manifest": "festival_review\\bhadrapada\\ganesh_chaturthi\\full_second_2027\\implementation.json",
+      "sha256": "bd56a1399629323cd78644cbd156395432709803f13e78ad225af721bf0f9085"
     }
   ],
   "view": "MAIN"

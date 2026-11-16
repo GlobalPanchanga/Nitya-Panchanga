@@ -4,11 +4,11 @@
   "events": 20,
   "locations": 2237,
   "records": 44740,
-  "updated_event": "rishi_panchami",
-  "rule_version": "RISHI_PANCHAMI_V3_MADHYAHNA_SECOND",
+  "updated_event": "ganesh_chaturthi",
+  "rule_version": "GANESH_CHATURTHI_V3_FULL_SECOND_OR_GAP_FIRST",
   "dates": {
-    "2027-09-04": 1291,
-    "2027-09-05": 946
+    "2027-09-04": 1045,
+    "2027-09-03": 1192
   },
   "sources": [
     {
@@ -102,16 +102,16 @@
       "sha256": "703d43fc90b9cfb4dc5182cacad9af86a3bde340c0b656d6e301c5b90d46308b"
     },
     {
-      "event": "ganesh_chaturthi",
-      "manifest": "festival_review\\bhadrapada\\ganesh_chaturthi\\implementation.json",
-      "sha256": "26fbf1419930adf8703412b937f2eb36199f089d61692b3e65c9be25b1b6b95f"
-    },
-    {
       "event": "rishi_panchami",
       "manifest": "festival_review\\bhadrapada\\rishi_panchami\\implementation.json",
       "sha256": "8dfe9d3f90e5a4d4fe0e4831e13ee41d82ee9a31c95ab97d98052e3441396ca6"
+    },
+    {
+      "event": "ganesh_chaturthi",
+      "manifest": "festival_review\\bhadrapada\\ganesh_chaturthi\\full_second_2027\\implementation.json",
+      "sha256": "bd56a1399629323cd78644cbd156395432709803f13e78ad225af721bf0f9085"
     }
   ],
-  "manifest_sha256": "905e1cce3e2565adf8beb3ae411c9cdb7736d642b1d3ec4b579dae428f05ddbf",
+  "manifest_sha256": "fb7cafd952825de865b7436b57bcb51672406b9e77282addba10158ae80be3bd",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
