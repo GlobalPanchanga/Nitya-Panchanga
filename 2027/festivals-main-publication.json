@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 25,
+  "events": 26,
   "locations": 2237,
-  "records": 50048,
-  "updated_event": "lunar_grahana_2027_08_17",
-  "rule_version": "INDEPENDENT_GRAHANA_V1_2_LOCAL_START_SUTAK",
+  "records": 52285,
+  "updated_event": "rig_upakarma",
+  "rule_version": "RIG_UPAKARMA_V3_TWO_GHATIKA_DHANISHTHA_PANCHAMI_HASTA",
   "dates": {
-    "2027-08-17": 626,
-    "2027-08-16": 302
+    "2027-08-16": 1584,
+    "2027-08-06": 653
   },
   "sources": [
     {
@@ -135,8 +135,13 @@
       "event": "lunar_grahana_2027_08_17",
       "manifest": "festival_review\\grahana\\lunar_grahana_2027_08_17\\implementation.json",
       "sha256": "b84f298540d788af2a2eb5081e9ca51a880d0dd30235ecf76868fec5a30871b9"
+    },
+    {
+      "event": "rig_upakarma",
+      "manifest": "festival_review\\shravana\\rig_upakarma\\implementation.json",
+      "sha256": "e32df42c31eb2cf59c6d5b2bd097c896a8f1df598a3665417d50a4d35c941e33"
     }
   ],
-  "manifest_sha256": "f9ef4ca1d47975f2563219e108b67dbba7c2daa5991225016e38f714ad5fdd00",
+  "manifest_sha256": "9777134b592cab9e890df8d0b4bddcb2a2be570e21a230a1dfc72f15a2726d4e",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
