@@ -1,13 +1,13 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 21,
+  "events": 22,
   "locations": 2237,
-  "records": 44810,
-  "updated_event": "solar_grahana_2027_02_06",
+  "records": 46044,
+  "updated_event": "solar_grahana_2027_08_02",
   "rule_version": "INDEPENDENT_GRAHANA_V1_2_LOCAL_START_SUTAK",
   "dates": {
-    "2027-02-06": 70
+    "2027-08-02": 1234
   },
   "sources": [
     {
@@ -114,8 +114,13 @@
       "event": "solar_grahana_2027_02_06",
       "manifest": "festival_review\\grahana\\solar_grahana_2027_02_06\\implementation.json",
       "sha256": "5996e9b4161c27066fbff6a2f5512962a2c89798c20f7f2c334f0c303e0aaba1"
+    },
+    {
+      "event": "solar_grahana_2027_08_02",
+      "manifest": "festival_review\\grahana\\solar_grahana_2027_08_02\\implementation.json",
+      "sha256": "41f8c55ce314c956fa2abface3b4f2de0b08413294c56bd262f7c1a313a39c47"
     }
   ],
-  "manifest_sha256": "adf50eac483293d8688c2bd108ebd251e625f4035f2d5bebf2a7bc2205e7d7bc",
+  "manifest_sha256": "6d4655011242f4b6a288095b67726e9c8c7f58902689cefeb0e1a6c9504555f7",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
