@@ -1,14 +1,13 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 20,
+  "events": 21,
   "locations": 2237,
-  "records": 44740,
-  "updated_event": "ganesh_chaturthi",
-  "rule_version": "GANESH_CHATURTHI_V3_FULL_SECOND_OR_GAP_FIRST",
+  "records": 44810,
+  "updated_event": "solar_grahana_2027_02_06",
+  "rule_version": "INDEPENDENT_GRAHANA_V1_2_LOCAL_START_SUTAK",
   "dates": {
-    "2027-09-04": 1045,
-    "2027-09-03": 1192
+    "2027-02-06": 70
   },
   "sources": [
     {
@@ -110,8 +109,13 @@
       "event": "ganesh_chaturthi",
       "manifest": "festival_review\\bhadrapada\\ganesh_chaturthi\\full_second_2027\\implementation.json",
       "sha256": "bd56a1399629323cd78644cbd156395432709803f13e78ad225af721bf0f9085"
+    },
+    {
+      "event": "solar_grahana_2027_02_06",
+      "manifest": "festival_review\\grahana\\solar_grahana_2027_02_06\\implementation.json",
+      "sha256": "5996e9b4161c27066fbff6a2f5512962a2c89798c20f7f2c334f0c303e0aaba1"
     }
   ],
-  "manifest_sha256": "fb7cafd952825de865b7436b57bcb51672406b9e77282addba10158ae80be3bd",
+  "manifest_sha256": "adf50eac483293d8688c2bd108ebd251e625f4035f2d5bebf2a7bc2205e7d7bc",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
