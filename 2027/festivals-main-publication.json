@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 23,
+  "events": 24,
   "locations": 2237,
-  "records": 47982,
-  "updated_event": "lunar_grahana_2027_02_20",
+  "records": 49120,
+  "updated_event": "lunar_grahana_2027_07_18",
   "rule_version": "INDEPENDENT_GRAHANA_V1_2_LOCAL_START_SUTAK",
   "dates": {
-    "2027-02-21": 1092,
-    "2027-02-20": 846
+    "2027-07-18": 1071,
+    "2027-07-19": 67
   },
   "sources": [
     {
@@ -125,8 +125,13 @@
       "event": "lunar_grahana_2027_02_20",
       "manifest": "festival_review\\grahana\\lunar_grahana_2027_02_20\\implementation.json",
       "sha256": "e4a632a335a3ebd451ffec32063973dc342885b07a70e0b7d86b457aaa0e3003"
+    },
+    {
+      "event": "lunar_grahana_2027_07_18",
+      "manifest": "festival_review\\grahana\\lunar_grahana_2027_07_18\\implementation.json",
+      "sha256": "29fe81dffded889078295b08637edfde4a73f072dc63526d099ad98a1bf2b6a0"
     }
   ],
-  "manifest_sha256": "e830ae3467c8b5e2fff1c46e88e71116d63bc734ed4751eca849afb43134bed1",
+  "manifest_sha256": "3bd861adbaa6e53984cb77a51c0e45c501038d018803da3c012e0a82871461ea",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
