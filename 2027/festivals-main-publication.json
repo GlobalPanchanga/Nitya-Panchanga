@@ -1,17 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 27,
+  "events": 28,
   "locations": 2237,
-  "records": 56488,
-  "updated_event": "yajur_upakarma",
-  "rule_version": "YAJUR_UPAKARMA_V3_SUNRISE_TWO_FALLBACK_DATES",
+  "records": 58725,
+  "updated_event": "hayagriva_jayanti",
+  "rule_version": "HAYAGRIVA_JAYANTI_V3_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-08-06": 1965,
-    "2027-09-15": 1899,
-    "2027-08-16": 271,
-    "2027-09-16": 67,
-    "2027-08-07": 1
+    "2027-08-17": 1313,
+    "2027-08-16": 924
   },
   "sources": [
     {
@@ -148,8 +145,13 @@
       "event": "yajur_upakarma",
       "manifest": "festival_review\\shravana\\yajur_upakarma\\implementation.json",
       "sha256": "7f4bcfee9ac3276d5bc689b7474616dfece4f1f03c63f8a3558437a10a15e457"
+    },
+    {
+      "event": "hayagriva_jayanti",
+      "manifest": "festival_review\\shravana\\hayagriva_jayanti\\implementation.json",
+      "sha256": "2024c508fae7bf9ae8cd6bc413cd6544a68d902f2e92e8bf1261389860dc4a2d"
     }
   ],
-  "manifest_sha256": "d2d1d35874823d4cb1a215128bb6d4ba3503b29aa6d342ecd19124898d46b69f",
+  "manifest_sha256": "7b1a0c83ee76cd1d75f6f13d40daa5baa568a6372f1b1264ab6e783e7df3eff1",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
