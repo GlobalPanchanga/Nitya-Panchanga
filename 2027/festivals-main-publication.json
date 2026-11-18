@@ -5,7 +5,7 @@
   "locations": 2237,
   "records": 52285,
   "updated_event": "rig_upakarma",
-  "rule_version": "RIG_UPAKARMA_V3_TWO_GHATIKA_DHANISHTHA_PANCHAMI_HASTA",
+  "rule_version": "RIG_UPAKARMA_V4_FALLBACK_REASONS",
   "dates": {
     "2027-08-16": 1584,
     "2027-08-06": 653
@@ -138,10 +138,10 @@
     },
     {
       "event": "rig_upakarma",
-      "manifest": "festival_review\\shravana\\rig_upakarma\\implementation.json",
-      "sha256": "e32df42c31eb2cf59c6d5b2bd097c896a8f1df598a3665417d50a4d35c941e33"
+      "manifest": "festival_review\\shravana\\rig_upakarma\\fallback_notes_2027\\implementation.json",
+      "sha256": "84dcc6c290998767b2d1ee98074538962807bc5deb77fa91299c8bd79a66214a"
     }
   ],
-  "manifest_sha256": "9777134b592cab9e890df8d0b4bddcb2a2be570e21a230a1dfc72f15a2726d4e",
+  "manifest_sha256": "8bdfb1c99cf5a4e0d61c541631f624ea01b6ec87e734f36457a1cf5bfd968b22",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
