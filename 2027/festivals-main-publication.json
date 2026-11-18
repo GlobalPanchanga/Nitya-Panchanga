@@ -1,14 +1,17 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 26,
+  "events": 27,
   "locations": 2237,
-  "records": 52285,
-  "updated_event": "rig_upakarma",
-  "rule_version": "RIG_UPAKARMA_V4_FALLBACK_REASONS",
+  "records": 56488,
+  "updated_event": "yajur_upakarma",
+  "rule_version": "YAJUR_UPAKARMA_V3_SUNRISE_TWO_FALLBACK_DATES",
   "dates": {
-    "2027-08-16": 1584,
-    "2027-08-06": 653
+    "2027-08-06": 1965,
+    "2027-09-15": 1899,
+    "2027-08-16": 271,
+    "2027-09-16": 67,
+    "2027-08-07": 1
   },
   "sources": [
     {
@@ -140,8 +143,13 @@
       "event": "rig_upakarma",
       "manifest": "festival_review\\shravana\\rig_upakarma\\fallback_notes_2027\\implementation.json",
       "sha256": "84dcc6c290998767b2d1ee98074538962807bc5deb77fa91299c8bd79a66214a"
+    },
+    {
+      "event": "yajur_upakarma",
+      "manifest": "festival_review\\shravana\\yajur_upakarma\\implementation.json",
+      "sha256": "7f4bcfee9ac3276d5bc689b7474616dfece4f1f03c63f8a3558437a10a15e457"
     }
   ],
-  "manifest_sha256": "8bdfb1c99cf5a4e0d61c541631f624ea01b6ec87e734f36457a1cf5bfd968b22",
+  "manifest_sha256": "d2d1d35874823d4cb1a215128bb6d4ba3503b29aa6d342ecd19124898d46b69f",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
