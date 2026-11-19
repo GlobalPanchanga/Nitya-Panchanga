@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 29,
+  "events": 30,
   "locations": 2237,
-  "records": 60962,
-  "updated_event": "anant_chaturdashi",
-  "rule_version": "ANANTA_CHATURDASHI_V3_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 63199,
+  "updated_event": "gauri_tritiya",
+  "rule_version": "GAURI_TRITIYA_V1_SECOND_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-09-14": 2223,
-    "2027-09-15": 14
+    "2027-09-03": 1385,
+    "2027-09-02": 852
   },
   "sources": [
     {
@@ -155,8 +155,13 @@
       "event": "anant_chaturdashi",
       "manifest": "festival_review\\bhadrapada\\anant_chaturdashi\\implementation.json",
       "sha256": "2bb369f26265b3727596aea2e1edb80b633fe3701a2c06759153ab0b43b360d0"
+    },
+    {
+      "event": "gauri_tritiya",
+      "manifest": "festival_review\\bhadrapada\\gauri_tritiya\\implementation.json",
+      "sha256": "e9a73996d62031df461f254db8382c079700a7ca73d31c90baacb51794015f33"
     }
   ],
-  "manifest_sha256": "47c4a3cdc163144fca6008437f2503712efadb41b2c07fd00b3879e676ab550b",
+  "manifest_sha256": "ceca2fb1a869f4536ccc1c9fd20ffcde0119b5efff097dcf028d5a3e0192d7bf",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
