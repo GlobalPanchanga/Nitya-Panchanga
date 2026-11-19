@@ -1,11 +1,11 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 30,
+  "events": 31,
   "locations": 2237,
-  "records": 63199,
-  "updated_event": "gauri_tritiya",
-  "rule_version": "GAURI_TRITIYA_V1_SECOND_SUNRISE_OR_CIVIL_START",
+  "records": 65436,
+  "updated_event": "saama_upakarma",
+  "rule_version": "SAAMA_UPAKARMA_V1_SECOND_SUNRISE_OR_CIVIL_START",
   "dates": {
     "2027-09-03": 1385,
     "2027-09-02": 852
@@ -160,8 +160,13 @@
       "event": "gauri_tritiya",
       "manifest": "festival_review\\bhadrapada\\gauri_tritiya\\implementation.json",
       "sha256": "e9a73996d62031df461f254db8382c079700a7ca73d31c90baacb51794015f33"
+    },
+    {
+      "event": "saama_upakarma",
+      "manifest": "festival_review\\bhadrapada\\saama_upakarma\\implementation.json",
+      "sha256": "7083d7019e8c221869bcd557951e29be76939e138f8ab3da6194666c7a9b9ec8"
     }
   ],
-  "manifest_sha256": "ceca2fb1a869f4536ccc1c9fd20ffcde0119b5efff097dcf028d5a3e0192d7bf",
+  "manifest_sha256": "fb150cdb44118855dd1dcd34b1df411473d7bb56ecc8555223212ae1ca54d7c7",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
