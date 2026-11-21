@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 33,
+  "events": 34,
   "locations": 2237,
-  "records": 69910,
-  "updated_event": "shardiya_navratri",
-  "rule_version": "SHARANNAVARATHRI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 72147,
+  "updated_event": "saraswati_avahan",
+  "rule_version": "SARASWATI_AVAHANA_V1_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-09-30": 1966,
-    "2027-10-01": 271
+    "2027-10-06": 2194,
+    "2027-10-07": 43
   },
   "sources": [
     {
@@ -175,8 +175,13 @@
       "event": "shardiya_navratri",
       "manifest": "festival_review\\ashwina\\shardiya_navratri\\implementation.json",
       "sha256": "e118dbec56643f0bceb52b6a2912832852f4e460f68eb903faed4de2dbd90cbc"
+    },
+    {
+      "event": "saraswati_avahan",
+      "manifest": "festival_review\\ashwina\\saraswati_avahan\\implementation.json",
+      "sha256": "c41287af09f0378973ab8d91a90d7652721c19cd4413262ee9d5c37e567abf3f"
     }
   ],
-  "manifest_sha256": "4e14f141bde1adebef04d87a865fe617d46fea9d90e63708cb4cfa8abbc55d3e",
+  "manifest_sha256": "5b878fab20391c854de367eb27fd50a9653189f2833ef2cd9930d6c9c634eaf5",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
