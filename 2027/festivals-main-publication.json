@@ -1,13 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 32,
+  "events": 33,
   "locations": 2237,
-  "records": 67673,
-  "updated_event": "vamana_jayanti",
-  "rule_version": "VAMANA_JAYANTI_V3_SECOND_SUNRISE_OR_CIVIL_START",
+  "records": 69910,
+  "updated_event": "shardiya_navratri",
+  "rule_version": "SHARANNAVARATHRI_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-09-12": 2237
+    "2027-09-30": 1966,
+    "2027-10-01": 271
   },
   "sources": [
     {
@@ -169,8 +170,13 @@
       "event": "vamana_jayanti",
       "manifest": "festival_review\\bhadrapada\\vamana_jayanti\\implementation.json",
       "sha256": "75424fcdb477395d892fc60026914bc6844817bf25d223349b306ce4068f67ba"
+    },
+    {
+      "event": "shardiya_navratri",
+      "manifest": "festival_review\\ashwina\\shardiya_navratri\\implementation.json",
+      "sha256": "e118dbec56643f0bceb52b6a2912832852f4e460f68eb903faed4de2dbd90cbc"
     }
   ],
-  "manifest_sha256": "abec743a7160a9c1745359e9c329ebaaa91c62e213e52dd6ebff0481182eda73",
+  "manifest_sha256": "4e14f141bde1adebef04d87a865fe617d46fea9d90e63708cb4cfa8abbc55d3e",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
