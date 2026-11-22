@@ -36,5 +36,8 @@ function renderFestivalDay(container,panchanga,festivals,dateLabel=null){
   const headingFont=container.classList.contains('city-content')?'normal 23px Georgia,serif':'normal 27px Georgia,serif';
   heading.style.font=headingFont;
   for(const section of festivals.filter(Boolean)){const title=section.querySelector(':scope > h2,:scope > h3');if(title)title.style.font=headingFont;}
-  container.replaceChildren(...(dateLabel?[dateLabel]:[]),...festivals.filter(Boolean),heading,panchanga);
+  const box=document.createElement('section');
+  box.className='panchanga-box';
+  box.append(heading,panchanga);
+  container.replaceChildren(...(dateLabel?[dateLabel]:[]),...festivals.filter(Boolean),box);
 }
