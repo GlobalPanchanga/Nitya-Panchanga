@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 36,
+  "events": 37,
   "locations": 2237,
-  "records": 76621,
-  "updated_event": "durga_ashtami",
-  "rule_version": "DURGA_ASHTAMI_V2_SECOND_SUNRISE_OR_CIVIL_START",
+  "records": 78858,
+  "updated_event": "maha_navami",
+  "rule_version": "MAHA_NAVAMI_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-10-07": 1295,
-    "2027-10-08": 942
+    "2027-10-08": 1295,
+    "2027-10-09": 942
   },
   "sources": [
     {
@@ -190,8 +190,13 @@
       "event": "durga_ashtami",
       "manifest": "festival_review\\ashwina\\durga_ashtami\\implementation.json",
       "sha256": "6664beb29ac235672c081bb76f7fed941f15f2d48bf50cf8ad41287cc7fcf55f"
+    },
+    {
+      "event": "maha_navami",
+      "manifest": "festival_review\\ashwina\\maha_navami\\implementation.json",
+      "sha256": "cb5d02864fd2f3a3252836e7a8aa1ca6d0353b2fb79a744146e85d12c6ee4604"
     }
   ],
-  "manifest_sha256": "5f6be6029907440ae17a86dc86454086905016a5cbb3b9591545fdc6f734b625",
+  "manifest_sha256": "6f7aa2821259b36c7f975764f291dbe8c43ee1cadf1530271e80ecfd6655e18e",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
