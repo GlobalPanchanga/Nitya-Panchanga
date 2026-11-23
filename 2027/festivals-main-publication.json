@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 37,
+  "events": 38,
   "locations": 2237,
-  "records": 78858,
-  "updated_event": "maha_navami",
-  "rule_version": "MAHA_NAVAMI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 81095,
+  "updated_event": "dussehra",
+  "rule_version": "VIJAYADASHAMI_V2_APARAHNA_PRADOSHA_SHRAVANA",
   "dates": {
-    "2027-10-08": 1295,
-    "2027-10-09": 942
+    "2027-10-09": 2236,
+    "2027-10-10": 1
   },
   "sources": [
     {
@@ -195,8 +195,13 @@
       "event": "maha_navami",
       "manifest": "festival_review\\ashwina\\maha_navami\\implementation.json",
       "sha256": "cb5d02864fd2f3a3252836e7a8aa1ca6d0353b2fb79a744146e85d12c6ee4604"
+    },
+    {
+      "event": "dussehra",
+      "manifest": "festival_review\\ashwina\\dussehra\\implementation.json",
+      "sha256": "89da80165933c438763350080b9a8d75614d5f13079caa2c556e065dda10ef7b"
     }
   ],
-  "manifest_sha256": "6f7aa2821259b36c7f975764f291dbe8c43ee1cadf1530271e80ecfd6655e18e",
+  "manifest_sha256": "091e6a19d6ef3cb795d8046e45a046bf1e44c828f9d7a974ff8d725e4f66fa2d",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
