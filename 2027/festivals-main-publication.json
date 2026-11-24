@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 39,
+  "events": 40,
   "locations": 2237,
-  "records": 83332,
-  "updated_event": "pitrupaksha_begins",
+  "records": 85569,
+  "updated_event": "sarva_pitru_amavasya",
   "rule_version": "PITRU_OBSERVANCES_V1_MADHYAHNA_SECOND_GAP_FIRST",
   "dates": {
-    "2027-09-16": 2222,
-    "2027-09-17": 15
+    "2027-09-29": 2151,
+    "2027-09-30": 86
   },
   "sources": [
     {
@@ -205,8 +205,13 @@
       "event": "pitrupaksha_begins",
       "manifest": "festival_review\\bhadrapada\\pitrupaksha_begins\\implementation.json",
       "sha256": "885837d1b1fc40b777a600587351aaca13b64dc2999b536e58c949526867420a"
+    },
+    {
+      "event": "sarva_pitru_amavasya",
+      "manifest": "festival_review\\bhadrapada\\sarva_pitru_amavasya\\implementation.json",
+      "sha256": "151d917bb2adf750a7d8f28638c0ffaffb64b2d151b5bfc2b42e838d51f903b9"
     }
   ],
-  "manifest_sha256": "f1d171c67dca94e603b803d4618515bb5e2ec8d7ff16b7ce01c118336cee0676",
+  "manifest_sha256": "177b25d8fcfdc43989a657937bd03fb1021dbd62c458e1cd868e66ed2ce143a5",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
