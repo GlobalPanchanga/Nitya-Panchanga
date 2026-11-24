@@ -1,14 +1,13 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 41,
+  "events": 42,
   "locations": 2237,
-  "records": 87806,
-  "updated_event": "madhwa_jayanthi",
-  "rule_version": "MADHWA_JAYANTHI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 90043,
+  "updated_event": "naraka_chaturdashi",
+  "rule_version": "NARAKA_V2_MOONRISE_ARUNODAYA_SUNRISE_FIRST",
   "dates": {
-    "2027-10-10": 1130,
-    "2027-10-09": 1107
+    "2027-10-28": 2237
   },
   "sources": [
     {
@@ -215,8 +214,13 @@
       "event": "madhwa_jayanthi",
       "manifest": "festival_review\\ashwina\\madhwa_jayanthi\\implementation.json",
       "sha256": "7d469b5979b73d385c54b8e0c1ebc31faf88e2f626d50cbc28e13e96aaa171a7"
+    },
+    {
+      "event": "naraka_chaturdashi",
+      "manifest": "festival_review\\ashwina\\naraka_chaturdashi\\implementation.json",
+      "sha256": "c7fd45a6c621480387d57f98cc00035133f77ccbbf8685bbd76c45faaf31c014"
     }
   ],
-  "manifest_sha256": "1a9f05e8ede5c5c21fce80462bf7552a99707eb914b1d1cd162469db245522eb",
+  "manifest_sha256": "19843037bc3a668fcd3331eaacfdfdce33cff44e5bfdcc5e75a5d2e884e706e9",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
