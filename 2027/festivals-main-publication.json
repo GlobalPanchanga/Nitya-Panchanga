@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 38,
+  "events": 39,
   "locations": 2237,
-  "records": 81095,
-  "updated_event": "dussehra",
-  "rule_version": "VIJAYADASHAMI_V2_APARAHNA_PRADOSHA_SHRAVANA",
+  "records": 83332,
+  "updated_event": "pitrupaksha_begins",
+  "rule_version": "PITRU_OBSERVANCES_V1_MADHYAHNA_SECOND_GAP_FIRST",
   "dates": {
-    "2027-10-09": 2236,
-    "2027-10-10": 1
+    "2027-09-16": 2222,
+    "2027-09-17": 15
   },
   "sources": [
     {
@@ -200,8 +200,13 @@
       "event": "dussehra",
       "manifest": "festival_review\\ashwina\\dussehra\\implementation.json",
       "sha256": "89da80165933c438763350080b9a8d75614d5f13079caa2c556e065dda10ef7b"
+    },
+    {
+      "event": "pitrupaksha_begins",
+      "manifest": "festival_review\\bhadrapada\\pitrupaksha_begins\\implementation.json",
+      "sha256": "885837d1b1fc40b777a600587351aaca13b64dc2999b536e58c949526867420a"
     }
   ],
-  "manifest_sha256": "091e6a19d6ef3cb795d8046e45a046bf1e44c828f9d7a974ff8d725e4f66fa2d",
+  "manifest_sha256": "f1d171c67dca94e603b803d4618515bb5e2ec8d7ff16b7ce01c118336cee0676",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
