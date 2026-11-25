@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 47,
+  "events": 48,
   "locations": 2237,
-  "records": 101228,
-  "updated_event": "vasant_panchami",
-  "rule_version": "VASANTHA_PANCHAMI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 103465,
+  "updated_event": "ratha_saptami",
+  "rule_version": "RATHA_SAPTAMI_V2_VARIABLE_ARUNODAYA_FIRST_OR_CIVIL_START",
   "dates": {
-    "2027-02-11": 2196,
-    "2027-02-12": 41
+    "2027-02-13": 2199,
+    "2027-02-14": 38
   },
   "sources": [
     {
@@ -245,8 +245,13 @@
       "event": "vasant_panchami",
       "manifest": "festival_review\\magha\\vasant_panchami\\implementation.json",
       "sha256": "079cd17c7e98376661f77ef7b777070bb3505ee208d4202bc19dd5c9e95d0ddb"
+    },
+    {
+      "event": "ratha_saptami",
+      "manifest": "festival_review\\magha\\ratha_saptami\\implementation.json",
+      "sha256": "9d06d9893c6cf27eaa170f18705e18c7e995132c47baecad37412e10b3db553f"
     }
   ],
-  "manifest_sha256": "e8ff846f404454bb090ec8781b63d67191c26c0508b72afa40ad6b85cbb8e3f6",
+  "manifest_sha256": "43a6e4e4afaaecf1b2174dd33267964218d96acc79f328ad9d23d7f57dc08250",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
