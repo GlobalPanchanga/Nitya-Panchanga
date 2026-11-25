@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 43,
+  "events": 44,
   "locations": 2237,
-  "records": 92280,
-  "updated_event": "bali_padyami",
-  "rule_version": "BALI_PADYAMI_V2_SAYANKALA_SECOND_GAP_FIRST",
+  "records": 94517,
+  "updated_event": "tulasi_pooje",
+  "rule_version": "TULASI_POOJE_V2_FINALIZED_DEVUTTHANA_PARANA",
   "dates": {
-    "2027-10-30": 1103,
-    "2027-10-29": 1134
+    "2027-11-11": 1171,
+    "2027-11-10": 1066
   },
   "sources": [
     {
@@ -225,8 +225,13 @@
       "event": "bali_padyami",
       "manifest": "festival_review\\kartika\\bali_padyami\\implementation.json",
       "sha256": "a40aa44f272db8b70901724b1d31e3c51ec79e0b6f9c2f5c67a5c900521583c1"
+    },
+    {
+      "event": "tulasi_pooje",
+      "manifest": "festival_review\\kartika\\tulasi_pooje\\implementation.json",
+      "sha256": "dbc5141d19167f468cd447755de68dcbce88ac409cf9b130d6146efa03feeb38"
     }
   ],
-  "manifest_sha256": "91a513625fcc7bbc23d47e6c8b3c0a1cb384765e8f4f684ea5772a157fbc493a",
+  "manifest_sha256": "9a2aa171605f4e3ed0b30ec891caa9678f7d5119a764da49ed4d4f1188b1b150",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
