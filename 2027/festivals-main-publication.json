@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 48,
+  "events": 49,
   "locations": 2237,
-  "records": 103465,
-  "updated_event": "ratha_saptami",
-  "rule_version": "RATHA_SAPTAMI_V2_VARIABLE_ARUNODAYA_FIRST_OR_CIVIL_START",
+  "records": 105702,
+  "updated_event": "bhishma_ashtami",
+  "rule_version": "BHISHMA_ASHTAMI_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-02-13": 2199,
-    "2027-02-14": 38
+    "2027-02-14": 2223,
+    "2027-02-15": 14
   },
   "sources": [
     {
@@ -250,8 +250,13 @@
       "event": "ratha_saptami",
       "manifest": "festival_review\\magha\\ratha_saptami\\implementation.json",
       "sha256": "9d06d9893c6cf27eaa170f18705e18c7e995132c47baecad37412e10b3db553f"
+    },
+    {
+      "event": "bhishma_ashtami",
+      "manifest": "festival_review\\magha\\bhishma_ashtami\\implementation.json",
+      "sha256": "c2c67e03c592bc1afde7a786e8ae56a1b235d9993c7aeace826bf552bc81e886"
     }
   ],
-  "manifest_sha256": "43a6e4e4afaaecf1b2174dd33267964218d96acc79f328ad9d23d7f57dc08250",
+  "manifest_sha256": "3b6d181ec33379eb5c0b041c7ef807fe6f0f1630bd59bc7b6c044095b4f2d63d",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
