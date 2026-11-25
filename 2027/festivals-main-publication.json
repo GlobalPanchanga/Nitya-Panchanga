@@ -1,13 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 42,
+  "events": 43,
   "locations": 2237,
-  "records": 90043,
-  "updated_event": "naraka_chaturdashi",
-  "rule_version": "NARAKA_V2_MOONRISE_ARUNODAYA_SUNRISE_FIRST",
+  "records": 92280,
+  "updated_event": "bali_padyami",
+  "rule_version": "BALI_PADYAMI_V2_SAYANKALA_SECOND_GAP_FIRST",
   "dates": {
-    "2027-10-28": 2237
+    "2027-10-30": 1103,
+    "2027-10-29": 1134
   },
   "sources": [
     {
@@ -219,8 +220,13 @@
       "event": "naraka_chaturdashi",
       "manifest": "festival_review\\ashwina\\naraka_chaturdashi\\implementation.json",
       "sha256": "c7fd45a6c621480387d57f98cc00035133f77ccbbf8685bbd76c45faaf31c014"
+    },
+    {
+      "event": "bali_padyami",
+      "manifest": "festival_review\\kartika\\bali_padyami\\implementation.json",
+      "sha256": "a40aa44f272db8b70901724b1d31e3c51ec79e0b6f9c2f5c67a5c900521583c1"
     }
   ],
-  "manifest_sha256": "19843037bc3a668fcd3331eaacfdfdce33cff44e5bfdcc5e75a5d2e884e706e9",
+  "manifest_sha256": "91a513625fcc7bbc23d47e6c8b3c0a1cb384765e8f4f684ea5772a157fbc493a",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
