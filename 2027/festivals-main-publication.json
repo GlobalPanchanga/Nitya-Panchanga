@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 46,
+  "events": 47,
   "locations": 2237,
-  "records": 98991,
-  "updated_event": "dattatreya_jayanti",
-  "rule_version": "DATTATREYA_JAYANTHI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 101228,
+  "updated_event": "vasant_panchami",
+  "rule_version": "VASANTHA_PANCHAMI_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-12-13": 2234,
-    "2027-12-12": 3
+    "2027-02-11": 2196,
+    "2027-02-12": 41
   },
   "sources": [
     {
@@ -240,8 +240,13 @@
       "event": "dattatreya_jayanti",
       "manifest": "festival_review\\margashirsha\\dattatreya_jayanti\\implementation.json",
       "sha256": "614db83f8d85eda9782be0f999045206142b5d6d8dc5aa4d8e06d998db2eb4f1"
+    },
+    {
+      "event": "vasant_panchami",
+      "manifest": "festival_review\\magha\\vasant_panchami\\implementation.json",
+      "sha256": "079cd17c7e98376661f77ef7b777070bb3505ee208d4202bc19dd5c9e95d0ddb"
     }
   ],
-  "manifest_sha256": "307417626f3cec678f13f5989b07d4c660f000321e1eff2c4368add6bc6c368c",
+  "manifest_sha256": "e8ff846f404454bb090ec8781b63d67191c26c0508b72afa40ad6b85cbb8e3f6",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
