@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 45,
+  "events": 46,
   "locations": 2237,
-  "records": 96754,
-  "updated_event": "gita_jayanti",
-  "rule_version": "GITA_JAYANTHI_V1_FINALIZED_MOKSHADA_EKADASHI",
+  "records": 98991,
+  "updated_event": "dattatreya_jayanti",
+  "rule_version": "DATTATREYA_JAYANTHI_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-12-09": 2126,
-    "2027-12-10": 111
+    "2027-12-13": 2234,
+    "2027-12-12": 3
   },
   "sources": [
     {
@@ -235,8 +235,13 @@
       "event": "gita_jayanti",
       "manifest": "festival_review\\margashirsha\\gita_jayanti\\implementation.json",
       "sha256": "fae4bca04acb4517ece20c21a585db9928e1919727c78b3c52d67ad8c32f56f0"
+    },
+    {
+      "event": "dattatreya_jayanti",
+      "manifest": "festival_review\\margashirsha\\dattatreya_jayanti\\implementation.json",
+      "sha256": "614db83f8d85eda9782be0f999045206142b5d6d8dc5aa4d8e06d998db2eb4f1"
     }
   ],
-  "manifest_sha256": "9d4df967e238f12356f592fa0b110fb66bc211dea07de85d9105967cd3435e78",
+  "manifest_sha256": "307417626f3cec678f13f5989b07d4c660f000321e1eff2c4368add6bc6c368c",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
