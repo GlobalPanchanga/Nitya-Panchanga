@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 44,
+  "events": 45,
   "locations": 2237,
-  "records": 94517,
-  "updated_event": "tulasi_pooje",
-  "rule_version": "TULASI_POOJE_V2_FINALIZED_DEVUTTHANA_PARANA",
+  "records": 96754,
+  "updated_event": "gita_jayanti",
+  "rule_version": "GITA_JAYANTHI_V1_FINALIZED_MOKSHADA_EKADASHI",
   "dates": {
-    "2027-11-11": 1171,
-    "2027-11-10": 1066
+    "2027-12-09": 2126,
+    "2027-12-10": 111
   },
   "sources": [
     {
@@ -230,8 +230,13 @@
       "event": "tulasi_pooje",
       "manifest": "festival_review\\kartika\\tulasi_pooje\\implementation.json",
       "sha256": "dbc5141d19167f468cd447755de68dcbce88ac409cf9b130d6146efa03feeb38"
+    },
+    {
+      "event": "gita_jayanti",
+      "manifest": "festival_review\\margashirsha\\gita_jayanti\\implementation.json",
+      "sha256": "fae4bca04acb4517ece20c21a585db9928e1919727c78b3c52d67ad8c32f56f0"
     }
   ],
-  "manifest_sha256": "9a2aa171605f4e3ed0b30ec891caa9678f7d5119a764da49ed4d4f1188b1b150",
+  "manifest_sha256": "9d4df967e238f12356f592fa0b110fb66bc211dea07de85d9105967cd3435e78",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
