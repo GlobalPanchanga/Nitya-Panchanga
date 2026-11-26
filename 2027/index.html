@@ -104,6 +104,11 @@ function renderEkadashis(rows){
     const guidance=document.createElement('p');guidance.className='event-message';guidance.textContent=ekadashiGuidance(message,role);
     const timing=document.createElement('p');timing.className='event-details';timing.textContent=details;
     card.append(h,guidance,timing);section.append(card);
+    if(name==='Devutthana Ekadashi'&&role==='UPAVASA_DAY_1'){
+      const note=document.createElement('p');note.className='event-note';
+      note.textContent='Note: Bhishma Panchaka Vrata starts today and runs through Kartika Purnima';
+      card.insertBefore(note,timing);
+    }
     if(devshayaniBegins){
       const beginning=document.createElement('article');beginning.className='ekadashi-event';beginning.dataset.role='OBSERVANCE';
       const title=document.createElement('h3');title.textContent='Chaaturmasya Vrata Begins (Shakha Vrata)';
