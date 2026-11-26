@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 50,
+  "events": 51,
   "locations": 2237,
-  "records": 107939,
-  "updated_event": "maha_shivaratri",
-  "rule_version": "MAHA_SHIVARATRI_V2_PRADOSHA_ARDHARATRI_FIRST_FALLBACK_SECOND",
+  "records": 110176,
+  "updated_event": "dhana_trayodashi",
+  "rule_version": "DHANA_TRAYODASHI_V2_SAYANKALA_PRADOSHA_SECOND_GAP_FIRST",
   "dates": {
-    "2027-03-06": 2236,
-    "2027-03-05": 1
+    "2027-10-27": 1385,
+    "2027-10-26": 852
   },
   "sources": [
     {
@@ -260,8 +260,13 @@
       "event": "maha_shivaratri",
       "manifest": "festival_review\\magha\\maha_shivaratri\\implementation.json",
       "sha256": "7b7fd453f2b62f489b38de34edcf4ebe9da2bd159a7b17d543a85dba4de4c148"
+    },
+    {
+      "event": "dhana_trayodashi",
+      "manifest": "festival_review\\ashwina\\dhana_trayodashi\\implementation.json",
+      "sha256": "58fb9114edcf38ec099d0fa9659631f4d28ea014ea8f363b09dd2e727b49765b"
     }
   ],
-  "manifest_sha256": "a767a0fb4e9d96eddf92a204d79f5776fc5c32434d7143f9a7cac5bee7484121",
+  "manifest_sha256": "268b2e83f1327c9fff8954ec0df16590d5d2b0ba47042e24312b5cd4457b3b38",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
