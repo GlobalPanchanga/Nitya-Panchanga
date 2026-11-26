@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 59,
+  "events": 60,
   "locations": 2237,
-  "records": 130309,
-  "updated_event": "holika_dahan",
-  "rule_version": "HOLIKA_DAHAN_V1_PRADOSHA_SECOND_CIVIL_START",
+  "records": 132546,
+  "updated_event": "bhimana_amavasya",
+  "rule_version": "BHIMANA_AMAVASYA_V2_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-03-21": 2132,
-    "2027-03-22": 105
+    "2027-08-02": 1507,
+    "2027-08-01": 730
   },
   "sources": [
     {
@@ -305,8 +305,13 @@
       "event": "holika_dahan",
       "manifest": "festival_review\\phalguna\\holika_dahan\\implementation.json",
       "sha256": "98cb1feab886fc6a57d573a40b323ce86646353e99380815ca8c2a2d61bd8e72"
+    },
+    {
+      "event": "bhimana_amavasya",
+      "manifest": "festival_review\\ashadha\\bhimana_amavasya\\implementation.json",
+      "sha256": "9ea6fda00dc64ca7d0accad92872803788632a245b4eff3f21975d9dcb016d76"
     }
   ],
-  "manifest_sha256": "ba28eb9400689130c470daa0adca1083dfeae723d6e661e15b410233361a1ab7",
+  "manifest_sha256": "ea50f94f4aa153a42e86c9be8a315380c5f8a33bd2ccb86d4d589b19ff1f5d15",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
