@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 54,
+  "events": 55,
   "locations": 2237,
-  "records": 116887,
-  "updated_event": "skanda_shasthi",
-  "rule_version": "SKANDA_SHASTHI_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 119124,
+  "updated_event": "vaikunta_chaturdashi",
+  "rule_version": "VAIKUNTA_CHATURDASHI_V1_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-12-04": 1405,
-    "2027-12-03": 832
+    "2027-11-13": 1166,
+    "2027-11-12": 1071
   },
   "sources": [
     {
@@ -280,8 +280,13 @@
       "event": "skanda_shasthi",
       "manifest": "festival_review\\margashirsha\\skanda_shasthi\\implementation.json",
       "sha256": "59d100a46ec9c8463696670b74b40a04960a637d22d00b5f9837e14bf289a7bb"
+    },
+    {
+      "event": "vaikunta_chaturdashi",
+      "manifest": "festival_review\\kartika\\vaikunta_chaturdashi\\implementation.json",
+      "sha256": "faddaea8ce7f9656316b36c6bead042ea2364bf981ff7c1c97dff58d4d0f704e"
     }
   ],
-  "manifest_sha256": "c6e6a1eee27ff7da74fad44a1cbfdba4df3f2f76528fd0751d868bbba8082756",
+  "manifest_sha256": "047e328f6c69fd0aeb21c6d8d3436d7fd101ec3ad26546d7be16fcf6ba91bdd7",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
