@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 49,
+  "events": 50,
   "locations": 2237,
-  "records": 105702,
-  "updated_event": "bhishma_ashtami",
-  "rule_version": "BHISHMA_ASHTAMI_V2_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 107939,
+  "updated_event": "maha_shivaratri",
+  "rule_version": "MAHA_SHIVARATRI_V2_PRADOSHA_ARDHARATRI_FIRST_FALLBACK_SECOND",
   "dates": {
-    "2027-02-14": 2223,
-    "2027-02-15": 14
+    "2027-03-06": 2236,
+    "2027-03-05": 1
   },
   "sources": [
     {
@@ -255,8 +255,13 @@
       "event": "bhishma_ashtami",
       "manifest": "festival_review\\magha\\bhishma_ashtami\\implementation.json",
       "sha256": "c2c67e03c592bc1afde7a786e8ae56a1b235d9993c7aeace826bf552bc81e886"
+    },
+    {
+      "event": "maha_shivaratri",
+      "manifest": "festival_review\\magha\\maha_shivaratri\\implementation.json",
+      "sha256": "7b7fd453f2b62f489b38de34edcf4ebe9da2bd159a7b17d543a85dba4de4c148"
     }
   ],
-  "manifest_sha256": "3b6d181ec33379eb5c0b041c7ef807fe6f0f1630bd59bc7b6c044095b4f2d63d",
+  "manifest_sha256": "a767a0fb4e9d96eddf92a204d79f5776fc5c32434d7143f9a7cac5bee7484121",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
