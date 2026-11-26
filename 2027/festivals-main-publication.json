@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 52,
+  "events": 53,
   "locations": 2237,
-  "records": 112413,
-  "updated_event": "lakshmi_puja",
-  "rule_version": "LAKSHMI_PUJE_V2_PRADOSHA_SECOND_GAP_FIRST",
+  "records": 114650,
+  "updated_event": "yama_dwitiya",
+  "rule_version": "YAMA_DWITIYA_V1_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-10-29": 1053,
-    "2027-10-28": 1184
+    "2027-10-31": 1644,
+    "2027-10-30": 593
   },
   "sources": [
     {
@@ -270,8 +270,13 @@
       "event": "lakshmi_puja",
       "manifest": "festival_review\\ashwina\\lakshmi_puja\\implementation.json",
       "sha256": "45de2acf5f704cf8fe937fb7010258e62d7bebfda1d2e455e25e6c003c01195b"
+    },
+    {
+      "event": "yama_dwitiya",
+      "manifest": "festival_review\\kartika\\yama_dwitiya\\implementation.json",
+      "sha256": "e51726c9149cf56a9ddac2489e51fbce07128b1387bc359f5f55b548887a751a"
     }
   ],
-  "manifest_sha256": "f1f614c9a3752623e45098d1601e8dbb56f093f5b4e700faaaec08b73984ae41",
+  "manifest_sha256": "f67fe45df3ca050240824e874f286eb3a0247450971fb0375c1c00c533fe3a79",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
