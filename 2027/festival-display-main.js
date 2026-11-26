@@ -14,6 +14,7 @@ function renderFestivals(rows,weekly=false){
   for(const [name,message,details,role] of rows){
     const card=document.createElement('article');card.className=weekly?'festival-event event':'festival-event';card.dataset.role=role;
     const title=document.createElement(weekly?'h4':'h3');title.textContent=name==='Ugadi'?'Chaandramaana Ugadi':name;card.append(title);
+    if(!weekly&&name==='Bali Padyami')title.textContent+=' (Govu Puje)';
     if(message){const p=document.createElement('p');p.className='event-message';p.textContent=message;card.append(p);}
     if(details){const p=document.createElement('p');p.className='event-details';p.textContent=details;card.append(p);}
     section.append(card);
