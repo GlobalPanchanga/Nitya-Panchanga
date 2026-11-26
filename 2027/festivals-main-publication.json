@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 53,
+  "events": 54,
   "locations": 2237,
-  "records": 114650,
-  "updated_event": "yama_dwitiya",
-  "rule_version": "YAMA_DWITIYA_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 116887,
+  "updated_event": "skanda_shasthi",
+  "rule_version": "SKANDA_SHASTHI_V1_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-10-31": 1644,
-    "2027-10-30": 593
+    "2027-12-04": 1405,
+    "2027-12-03": 832
   },
   "sources": [
     {
@@ -275,8 +275,13 @@
       "event": "yama_dwitiya",
       "manifest": "festival_review\\kartika\\yama_dwitiya\\implementation.json",
       "sha256": "e51726c9149cf56a9ddac2489e51fbce07128b1387bc359f5f55b548887a751a"
+    },
+    {
+      "event": "skanda_shasthi",
+      "manifest": "festival_review\\margashirsha\\skanda_shasthi\\implementation.json",
+      "sha256": "59d100a46ec9c8463696670b74b40a04960a637d22d00b5f9837e14bf289a7bb"
     }
   ],
-  "manifest_sha256": "f67fe45df3ca050240824e874f286eb3a0247450971fb0375c1c00c533fe3a79",
+  "manifest_sha256": "c6e6a1eee27ff7da74fad44a1cbfdba4df3f2f76528fd0751d868bbba8082756",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
