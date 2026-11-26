@@ -372,7 +372,7 @@
     "2027-12-29.html": "2cd651edc4371b7a5b248294d6a02a6e618bb3e127aa5dcd79b964cb697a3008",
     "2027-12-30.html": "029d34eb6ab3bfd40ed2aae225ebcd0453db0388e544c41f9e3a3a3ab015e4ce",
     "2027-12-31.html": "5a8aa895b8afdecef68f481e0f8a93318b6cf17a32283d292345eee7b73ad19e",
-    "index.html": "b5c1016ec74d1c20dacb80d37d49dff6fc786566c8dad27308c0a1c06c6ba86a",
+    "index.html": "5725ed480e54bf7547e235b6cf164b5614eef58e9ffb96258fb13c3ed41dd674",
     "places.json": "a32cb7355625267d943f4dd656a2f6936a59d5f58c822f8959ca9d3ccb911eb1",
     "events2027/000213e8b9cd5c249bea-ac94b7cae835.json": "ac94b7cae835fa2baeedab0905444c46f3df6b2dc401201cdb3ff67df1a1d0da",
     "events2027/0004811b76eb9038caca-796377b93267.json": "796377b93267bf5f0d999e460c81d91666642534e14d8be17ed3ce896966d100",
@@ -148507,7 +148507,8 @@
     "graha2027/source_US_North Glendale_34.16056_-118.26452.96cbd8a0f4887a16.json": "96cbd8a0f4887a1646dd5e76e88d2705da3c23c16e4d51675cfc997719030510",
     "graha2027/source_US_Oxnard Shores_34.19084_-119.2415.9a2c38483205165c.json": "9a2c38483205165c3c87a5f81dc73eceb8d59933b403c7829950a5d0eb276cb7",
     "graha2027/source_US_Sunrise_26.15767_-80.28611.33e6b13a84e3374d.json": "33e6b13a84e3374dae041c36e8278504232bf4efe569144867b3737ee02454f8",
-    "graha2027/source_US_Tonawanda_42.98499_-78.87798.024f58c443a4135f.json": "024f58c443a4135f0666ac4a9ee90ca9b195d8fbb4bb457e03d05bc935d0e0c6"
+    "graha2027/source_US_Tonawanda_42.98499_-78.87798.024f58c443a4135f.json": "024f58c443a4135f0666ac4a9ee90ca9b195d8fbb4bb457e03d05bc935d0e0c6",
+    "today.html": "d11ea10c64e075b865ce4c7dafc406ed586d2de8ec83f0352f77658d09847d16"
   },
   "yoga_karana_display_policy": "Every period from sunrise through next sunrise; final period until next sunrise",
   "yoga_karana_corrected_on": "2026-10-31",
@@ -148525,5 +148526,6 @@
   "graha_version": "GRAHA_2027_V1_CALENDAR_NIRAYANA_MEAN_NODES",
   "graha_city_days": 816505,
   "graha_catalog": "graha2027",
-  "graha_placement": "After Panchanga"
+  "graha_placement": "After Panchanga",
+  "permanent_today_url": "https://globalpanchanga.github.io/Nitya-Panchanga/2027/today.html"
 }

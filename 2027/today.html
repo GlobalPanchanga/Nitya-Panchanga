@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Today’s Panchanga · 2027</title>
+<meta name="description" content="Open today's Panchanga for your city. Daily Panchanga, festivals, Aradhanes and sunrise graha positions for 2027.">
+<meta property="og:title" content="Today’s Panchanga · 2027">
+<meta property="og:description" content="Choose your city once. Open this same link each day for your local Panchanga in 2027.">
+<style>body{max-width:620px;margin:64px auto;padding:0 24px;background:#f6f5ef;color:#20372f;font:18px/1.6 system-ui,sans-serif}h1{font:normal 36px Georgia,serif}a{color:#246451}</style>
+<h1>Today’s Panchanga</h1><p>Opening today’s Panchanga for your city…</p>
+<p><a id="open" href="./index.html?date=today">Open Today’s Panchanga</a></p>
+<noscript><p>Please enable JavaScript to choose your city and its local date.</p></noscript>
+<script>
+const target=new URL('./index.html',location.href);target.searchParams.set('date','today');target.searchParams.set('today_version','2027-1');
+const city=new URLSearchParams(location.search).get('city');if(city)target.searchParams.set('city',city);
+document.querySelector('#open').href=target.href;location.replace(target.href);
+</script></html>
