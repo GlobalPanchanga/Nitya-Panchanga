@@ -1,18 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 57,
+  "events": 58,
   "locations": 2237,
-  "records": 125835,
-  "updated_event": "ellu_amavasya",
-  "rule_version": "ELLU_AMAVASYA_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 128072,
+  "updated_event": "madhwa_navami",
+  "rule_version": "MADHWA_NAVAMI_V1_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-01-07": 2223,
-    "2027-01-08": 13,
-    "2027-01-06": 1,
-    "2027-12-27": 2212,
-    "2027-12-28": 24,
-    "2027-12-26": 1
+    "2027-02-15": 2236,
+    "2027-02-14": 1
   },
   "sources": [
     {
@@ -299,8 +295,13 @@
       "event": "ellu_amavasya",
       "manifest": "festival_review\\margashirsha\\ellu_amavasya\\implementation.json",
       "sha256": "c4f433396427953d7cda2d265d02fed62959d043802740b0d58e7bfe1125b4c6"
+    },
+    {
+      "event": "madhwa_navami",
+      "manifest": "festival_review\\magha\\madhwa_navami\\implementation.json",
+      "sha256": "24bd63b249af4ba28b9296ffcb17c2219d1967ac9dd10fcdfe79ac4b2061b725"
     }
   ],
-  "manifest_sha256": "861e093990d42b4b5fb5fa30b2ddbb58f8569c852682bd394120b385de8561ca",
+  "manifest_sha256": "5ce80f2fcf95f9aaaf39d49a2bff3760e800a49b22ce2689f2660a49fbf32410",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
