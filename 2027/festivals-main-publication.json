@@ -1,14 +1,18 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 56,
+  "events": 57,
   "locations": 2237,
-  "records": 121361,
-  "updated_event": "dhanwantari_jayanthi",
-  "rule_version": "DHANWANTARI_JAYANTHI_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 125835,
+  "updated_event": "ellu_amavasya",
+  "rule_version": "ELLU_AMAVASYA_V1_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-11-25": 1179,
-    "2027-11-24": 1058
+    "2027-01-07": 2223,
+    "2027-01-08": 13,
+    "2027-01-06": 1,
+    "2027-12-27": 2212,
+    "2027-12-28": 24,
+    "2027-12-26": 1
   },
   "sources": [
     {
@@ -290,8 +294,13 @@
       "event": "dhanwantari_jayanthi",
       "manifest": "festival_review\\kartika\\dhanwantari_jayanthi\\implementation.json",
       "sha256": "95702d2bfbc47f647d71451d89690f7f4102aa2860d90787ea06225469b3c638"
+    },
+    {
+      "event": "ellu_amavasya",
+      "manifest": "festival_review\\margashirsha\\ellu_amavasya\\implementation.json",
+      "sha256": "c4f433396427953d7cda2d265d02fed62959d043802740b0d58e7bfe1125b4c6"
     }
   ],
-  "manifest_sha256": "aae69f9c0129da98b7a8403c6c646b3baae21481b00864d70135cc3b5ee8b86d",
+  "manifest_sha256": "861e093990d42b4b5fb5fa30b2ddbb58f8569c852682bd394120b385de8561ca",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
