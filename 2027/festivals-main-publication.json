@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 51,
+  "events": 52,
   "locations": 2237,
-  "records": 110176,
-  "updated_event": "dhana_trayodashi",
-  "rule_version": "DHANA_TRAYODASHI_V2_SAYANKALA_PRADOSHA_SECOND_GAP_FIRST",
+  "records": 112413,
+  "updated_event": "lakshmi_puja",
+  "rule_version": "LAKSHMI_PUJE_V2_PRADOSHA_SECOND_GAP_FIRST",
   "dates": {
-    "2027-10-27": 1385,
-    "2027-10-26": 852
+    "2027-10-29": 1053,
+    "2027-10-28": 1184
   },
   "sources": [
     {
@@ -265,8 +265,13 @@
       "event": "dhana_trayodashi",
       "manifest": "festival_review\\ashwina\\dhana_trayodashi\\implementation.json",
       "sha256": "58fb9114edcf38ec099d0fa9659631f4d28ea014ea8f363b09dd2e727b49765b"
+    },
+    {
+      "event": "lakshmi_puja",
+      "manifest": "festival_review\\ashwina\\lakshmi_puja\\implementation.json",
+      "sha256": "45de2acf5f704cf8fe937fb7010258e62d7bebfda1d2e455e25e6c003c01195b"
     }
   ],
-  "manifest_sha256": "268b2e83f1327c9fff8954ec0df16590d5d2b0ba47042e24312b5cd4457b3b38",
+  "manifest_sha256": "f1f614c9a3752623e45098d1601e8dbb56f093f5b4e700faaaec08b73984ae41",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
