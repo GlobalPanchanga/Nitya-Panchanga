@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 58,
+  "events": 59,
   "locations": 2237,
-  "records": 128072,
-  "updated_event": "madhwa_navami",
-  "rule_version": "MADHWA_NAVAMI_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 130309,
+  "updated_event": "holika_dahan",
+  "rule_version": "HOLIKA_DAHAN_V1_PRADOSHA_SECOND_CIVIL_START",
   "dates": {
-    "2027-02-15": 2236,
-    "2027-02-14": 1
+    "2027-03-21": 2132,
+    "2027-03-22": 105
   },
   "sources": [
     {
@@ -300,8 +300,13 @@
       "event": "madhwa_navami",
       "manifest": "festival_review\\magha\\madhwa_navami\\implementation.json",
       "sha256": "24bd63b249af4ba28b9296ffcb17c2219d1967ac9dd10fcdfe79ac4b2061b725"
+    },
+    {
+      "event": "holika_dahan",
+      "manifest": "festival_review\\phalguna\\holika_dahan\\implementation.json",
+      "sha256": "98cb1feab886fc6a57d573a40b323ce86646353e99380815ca8c2a2d61bd8e72"
     }
   ],
-  "manifest_sha256": "5ce80f2fcf95f9aaaf39d49a2bff3760e800a49b22ce2689f2660a49fbf32410",
+  "manifest_sha256": "ba28eb9400689130c470daa0adca1083dfeae723d6e661e15b410233361a1ab7",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
