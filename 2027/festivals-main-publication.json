@@ -1,14 +1,14 @@
 {
   "year": 2027,
   "view": "MAIN",
-  "events": 55,
+  "events": 56,
   "locations": 2237,
-  "records": 119124,
-  "updated_event": "vaikunta_chaturdashi",
-  "rule_version": "VAIKUNTA_CHATURDASHI_V1_FIRST_SUNRISE_OR_CIVIL_START",
+  "records": 121361,
+  "updated_event": "dhanwantari_jayanthi",
+  "rule_version": "DHANWANTARI_JAYANTHI_V1_FIRST_SUNRISE_OR_CIVIL_START",
   "dates": {
-    "2027-11-13": 1166,
-    "2027-11-12": 1071
+    "2027-11-25": 1179,
+    "2027-11-24": 1058
   },
   "sources": [
     {
@@ -285,8 +285,13 @@
       "event": "vaikunta_chaturdashi",
       "manifest": "festival_review\\kartika\\vaikunta_chaturdashi\\implementation.json",
       "sha256": "faddaea8ce7f9656316b36c6bead042ea2364bf981ff7c1c97dff58d4d0f704e"
+    },
+    {
+      "event": "dhanwantari_jayanthi",
+      "manifest": "festival_review\\kartika\\dhanwantari_jayanthi\\implementation.json",
+      "sha256": "95702d2bfbc47f647d71451d89690f7f4102aa2860d90787ea06225469b3c638"
     }
   ],
-  "manifest_sha256": "047e328f6c69fd0aeb21c6d8d3436d7fd101ec3ad26546d7be16fcf6ba91bdd7",
+  "manifest_sha256": "aae69f9c0129da98b7a8403c6c646b3baae21481b00864d70135cc3b5ee8b86d",
   "weekly_frozen_commit": "02b6aa7402febe8cc9b2766c51ad282afb71c8e9"
 }
